@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, BehaviorSubject } from 'rxjs';
+// import { Observable, BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -9,13 +9,15 @@ export class ApiService {
   // Google API_KEY
 googleApiKey = 'AIzaSyDKHFCMQiqFcNERDDcHqqcHRvNqZdqCLQU';
 
-// Eventful API KEY & API URL
+// Eventful API KEY
 eventApiKey = 'S7N4hXRm85fgzH7G';
 
   constructor(private http: HttpClient) { }
 
   getLocation() {
-    const api = `https://maps.googleapis.com/maps/api/js?key=${this.googleApiKey}&callback=initMap`;
+    // const api = `https://www.googleapis.com/geolocation/v1/geolocate?key=${this.googleApiKey}`;
+    // const api = `https://maps.googleapis.com/maps/api/js?key=${this.googleApiKey}&callback=initMap`
+    const api = 'https://ipapi.co/json/';
     return this.http.get(api);
 }
 

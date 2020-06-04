@@ -18,13 +18,15 @@ export class MainComponent implements OnInit {
     });
     this.apiService.getTranslation().subscribe((data) => {
       this.translation = data;
+      console.log(this.translation);
     });
 
     this.apiService.getEvent().subscribe((data) => {
       this.events = data;
+      console.log(this.events);
     });
   
-   }
+  }
 
   ngOnInit(): void {}
 
