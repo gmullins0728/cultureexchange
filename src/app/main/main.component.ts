@@ -14,6 +14,7 @@ export class MainComponent implements OnInit {
   constructor(private apiService: ApiService) {
     this.apiService.getLocation().subscribe((data) => {
       this.location = data;
+      console.log(this.location);
     });
     this.apiService.getTranslation().subscribe((data) => {
       this.translation = data;
