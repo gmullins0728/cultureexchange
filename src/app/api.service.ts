@@ -1,23 +1,26 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-// import { Observable, BehaviorSubject } from 'rxjs';
+import { Data } from '../app/data';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
-  // Google API_KEY
+  // Google API KEY
 googleApiKey = 'AIzaSyDKHFCMQiqFcNERDDcHqqcHRvNqZdqCLQU';
 
-// Eventful API KEY
-eventApiKey = 'S7N4hXRm85fgzH7G';
+// Ticketmaster API KEY
+eventApiKey = 'ZL1Y7N3SNRvR8ISGiM6GE8FrbYErNAV7';
+
+// DATABASE API URL
+dbApiUrl = "http://localhost:3000/api/CultureExchange";
+
 
   constructor(private http: HttpClient) { }
 
   getLocation() {
-    // const api = `https://www.googleapis.com/geolocation/v1/geolocate?key=${this.googleApiKey}`;
-    // const api = `https://maps.googleapis.com/maps/api/js?key=${this.googleApiKey}&callback=initMap`
-    const api = 'https://ipapi.co/json/';
+    const api = `https://maps.googleapis.com/maps/api/js?key=${this.googleApiKey}&callback=initMap`
     return this.http.get(api);
 }
 
@@ -27,7 +30,11 @@ eventApiKey = 'S7N4hXRm85fgzH7G';
   }
 
   getEvent() {
-    const api = `http://api.eventful.com/json/events/search?app_key=${this.eventApiKey}`;
+    const api = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${this.eventApiKey}`;
     return this.http.get(api);
+  }
+
+  getDataBase(): Observable<Data[]> {
+    return this.http.get<Data[]>(this.dbApiUrl);
   }
 }

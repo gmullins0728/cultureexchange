@@ -1,9 +1,11 @@
 const router = require("express").Router();
-const api = require("./api");
+const pool = require("../connection");
 
-router.get("/api", (req, res) => {
-    console.log(req.body);
-    res.json(api);
+router.get('tables', (req, res) => {
+    pool.query('SELECT * FROM CultureExchange').then((data) => {
+        res.json(data.rows);
+        res.status(200);
+    })
 });
 
 module.exports = router;
