@@ -43,7 +43,7 @@ export class MainComponent implements OnInit {
       const google = await loader.load();
       return new google.maps.Map(document.getElementById('map'), {
         center: { lat: 44.182205, lng: -84.506836 },
-        zoom: 8,
+        zoom: 6.5,
       });
   
   }
