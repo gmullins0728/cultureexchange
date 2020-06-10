@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from "../api.service";
-import { Loader, LoaderOptions } from 'google-maps';
-import { Data } from '../data';
+
 
 @Component({
   selector: 'app-main',
@@ -9,48 +8,51 @@ import { Data } from '../data';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-  location: any;
+  // createCountries() {
+  //   const countries = [
+  //     { id: 1, name: 'US'},
+  //     { id: 2, name: 'Mexico'},
+  //     { id: 3, name: 'France'},
+  //     { id: 4, name: 'Germany'},
+  //     { id: 5, name: 'Italy'},
+  //     { id: 6, name: 'S. Korea'},
+  //     { id: 7, name: 'Japan'},
+  //     { id: 8, name: 'China'}
+  //   ];
+  // }
   translation: any;
-  events: any;
-  database: Data[];
+  holiday: any;
+  culture: any;
+
 
   constructor(private apiService: ApiService) {
-    this.apiService.getDataBase().subscribe((data) => {
-      this.database = data;
-      console.log(this.database);
+    // this.apiService.getCountry().subscribe((data) => {
+    //   this.country = data;
+    //   console.log(this.country);
+    // });
+
+    // this.apiService.getTranslation().subscribe((data) => {
+    //   this.translation = data;
+    //   console.log(this.translation);
+    // });
+
+    this.apiService.getHoliday().subscribe((data) => {
+      this.holiday = data;
+      console.log(this.holiday);
     });
 
-    this.apiService.getEvent().subscribe((data) => {
-      this.events = data;
-      console.log(this.events);
-    });
-
-    this.apiService.getTranslation().subscribe((data) => {
-      this.translation = data;
-      console.log(this.translation);
-    });
+    // this.apiService.getCulture().subscribe((data) => {
+    //   this.culture = data;
+    //   console.log(this.culture);
+    // });
   } 
     
 
-    async miMap() {
-      const options: LoaderOptions = {
-      };
-      const loader = new Loader(
-        'AIzaSyDKHFCMQiqFcNERDDcHqqcHRvNqZdqCLQU',
-        options
-      );
-      
-      const google = await loader.load();
-      return new google.maps.Map(document.getElementById('map'), {
-        center: { lat: 44.182205, lng: -84.506836 },
-        zoom: 6.5,
-      });
-  
-  }
+    
   
 
   ngOnInit(): void {
-    this.miMap();
+  
 
   }
   
