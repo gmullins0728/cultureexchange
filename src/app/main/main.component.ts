@@ -53,26 +53,6 @@ export class MainComponent implements OnInit {
       this.translation = data;
       console.log(this.translation);
     });
-<<<<<<< HEAD
-=======
-  } 
-    
-
-    async miMap() {
-      const options: LoaderOptions = {
-      };
-      const loader = new Loader(
-        'AIzaSyDKHFCMQiqFcNERDDcHqqcHRvNqZdqCLQU',
-        options
-      );
-      
-      const google = await loader.load();
-      return new google.maps.Map(document.getElementById('map'), {
-        center: { lat: 44.182205, lng: -84.506836 },
-        zoom: 6.5,
-      });
-  
->>>>>>> 157ef3a8db86db8c025da77e620cd59d1c6298fa
   }
 
   async miMap() {
