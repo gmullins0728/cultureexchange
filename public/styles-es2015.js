@@ -441,7 +441,7 @@ module.exports = exported;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Admin\Documents\FrontEnd\cultureexchange\src\styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! C:\Users\chels\Desktop\cultureexchange-master\src\styles.css */"./src/styles.css");
 
 
 /***/ })
