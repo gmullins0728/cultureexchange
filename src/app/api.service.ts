@@ -1,26 +1,29 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Data } from '../app/data';
 import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
-  // Google API KEY
-googleApiKey = 'api_key';
+  // MapBox Access Token
+access_token = 'pk.eyJ1IjoiZ211bGxpbnMwNzI4IiwiYSI6ImNrYjgzcHpwODAwZnAycHA1ZGZmeDhxN3cifQ.MquVqdfxBi_bYRV5-33IyA';
 
-// Ticketmaster API KEY
-eventApiKey = 'ZL1Y7N3SNRvR8ISGiM6GE8FrbYErNAV7';
+// Calanderific API KEY
+holidayApiKey = '49f2edd5bf043a727f73649144947c6fc5aa7ebb7c856909112ef7a91a0f00b3';
+holidayBaseUrl = 'https://calendarific.com/api/v2/holidays'
 
-// DATABASE API URL
-dbApiUrl = "http://localhost:3000/api/CultureExchange";
+// Smithsonian API KEY
+cultureApiKey = 'VNxxwOeVfkefdMg8CvgxRyfFZRJife3c6D5FHa1v';
+// baseUrl = 'https://api.si.edu/openaccess/api/v1.0/category/history_culture/search';
+
+
 
 
   constructor(private http: HttpClient) { }
 
-  getLocation() {
-    const api = `https://maps.googleapis.com/maps/api/js?key=${this.googleApiKey}&callback=initMap`
+  getCountry() {
+    const api = `https://api.mapbox.com/{endpoint}?access_token=${this.access_token}`;
     return this.http.get(api);
 }
 
@@ -29,12 +32,15 @@ dbApiUrl = "http://localhost:3000/api/CultureExchange";
     return this.http.get(api);
   }
 
-  getEvent() {
-    const api = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${this.eventApiKey}`;
+  getHoliday() {
+    const api = `${this.holidayBaseUrl}?&api_key=${this.holidayApiKey}&country=US&year=2020`;
     return this.http.get(api);
   }
 
-  getDataBase(): Observable<Data[]> {
-    return this.http.get<Data[]>(this.dbApiUrl);
+  getCulture() {
+    const api = `https://api.si.edu/openaccess/api/v1.0/category/history_culture/search?${this.cultureApiKey}`;
+    return this.http.get(api);
   }
+
+
 }
