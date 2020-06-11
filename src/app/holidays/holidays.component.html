@@ -1,1 +1,17 @@
-<p>holidays works!</p>
+<main>
+  <!-- ngIf for monthly holiday results -->
+  <h1>July 2020 Holidays</h1>
+
+  <div class="container" *ngIf="holidays">
+    <section>
+      <div class="calendar">
+        <div class="holidaysName">
+          <p>{{ holidays.name }}</p>
+        </div>
+      </div>
+      <!-- *ngFor="let item of **ARRAY IN TS FILE**" -->
+      <!-- Insert interpolation/dot notation from data we are pulling -->
+      <!-- Possibly add learn more section on holidays? -->
+    </section>
+  </div>
+</main>
