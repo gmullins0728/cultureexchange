@@ -1,35 +1,59 @@
-<!-- <p>main works!</p>
-<div id="map"></div> -->
-<body>
-  <h4>Nav Bar Filler</h4>
-  <!-- <img name="slide" width="400" height="200" /> -->
-
-  <h1>
-    <div id="state">Michigan</div>
-    <div id="what">Culture</div>
-    <div id="how">Exchange</div>
-  </h1>
-  <h2>Monthly theme...</h2>
-  <p>Connecting with Michiganders</p>
-
-  <h3>Cultural Cities in Michigan to Explore</h3>
-  <ul>
-    <li>Detroit</li>
-    <li>Ann Arbor</li>
-    <li>Grand Rapids</li>
-    <li>Detroit</li>
-    <li>Hamtramck</li>
-    <li>Grand Rapids</li>
-    <li>Detroit</li>
-    <li>Hamtramck</li>
-    <li>Grand Rapids</li>
-    <li>Detroit</li>
-    <li>Hamtramck</li>
-    <li>Grand Rapids</li>
-    The list of Michigan cities
-  </ul> -->
-
-  <!-- In above section, cities will be on home page and will hyperlink to separate component with the Google map 
-    image and the "learn" database -->
-
-<!-- </body> -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Culture Exchange</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./main.component.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="hero">
+      <header>
+        <img class="logo" src="../../assets/tcelogo.png">
+        <nav>
+          <ul class="nav__links">
+            <li><a href="#">Countries</a></li>
+            <li><a href="#">Cultivators</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Learn</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+        <a href="#"><button class="med__button">Profile</button></a>
+        <div class="mobile__menu">
+          <input id="toggle" type="checkbox" />
+          <label class="hamburger" for="toggle">
+            <div class="hamburger__top"></div>
+            <div class="hamburger__meat"></div>
+            <div class="hamburger__bottom"></div>
+          </label>
+          <div class="hamburger__nav">
+            <div class="hamburger__nav--wrapper">
+              <nav class="hamburger__nav--items">
+                <li><a href="#">Countries</a></li>
+                <li><a href="#">Cultivators</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">About</a></li>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="hero__content">
+        <div class="hero__text">
+          <p class="hero__subtitle">
+            Share Culture | Learn Culture | Build Culture
+          </p>
+          <h1>Making The World A Bit Smaller</h1>
+          <div class="play__section">
+            <div id="play" class="play__button">
+              <img src="../../assets/playbtn.svg" alt="Play Button" />
+            </div>
+            <p>July's Theme: "It's A Celebration"</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

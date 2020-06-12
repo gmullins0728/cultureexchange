@@ -8,9 +8,9 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ProfileComponent } from './profile/profile.component';
-import { SearchComponent } from './search/search.component';
 import { CountriesComponent } from './countries/countries.component';
 import { HolidaysComponent } from './holidays/holidays.component';
+import { CultureComponent } from './culture/culture.component';
 
 @NgModule({
   declarations: [
@@ -18,9 +18,9 @@ import { HolidaysComponent } from './holidays/holidays.component';
     MainComponent,
     NavBarComponent,
     ProfileComponent,
-    SearchComponent,
     CountriesComponent,
-    HolidaysComponent
+    HolidaysComponent,
+    CultureComponent
   ],
   imports: [
     BrowserModule,

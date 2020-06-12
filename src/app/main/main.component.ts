@@ -44,8 +44,7 @@ export class MainComponent implements OnInit {
   //   ];
   // }
   translation: any;
-  holiday: any;
-  culture: any;
+  
 
 
   constructor(private apiService: ApiService) {
@@ -59,16 +58,10 @@ export class MainComponent implements OnInit {
     //   console.log(this.translation);
     // });
 
-    this.apiService.getHoliday().subscribe((data) => {
-      this.holiday = data;
-      console.log(this.holiday);
-    });
+  
 
 
-    // this.apiService.getCulture().subscribe((data) => {
-    //   this.culture = data;
-    //   console.log(this.culture);
-    // });
+    
   } 
     
 

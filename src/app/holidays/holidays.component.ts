@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-holidays',
@@ -7,9 +8,10 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./holidays.component.css'],
 })
 export class HolidaysComponent implements OnInit {
-  apiService: any;
   holidays: any;
-  constructor(private route: ActivatedRoute) {}
+  constructor(
+    private apiService: ApiService, 
+    public route: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.apiService.getHolidays().subscribe((data) => {
