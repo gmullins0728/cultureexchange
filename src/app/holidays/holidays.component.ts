@@ -8,7 +8,7 @@ import { ApiService } from '../api.service';
   styleUrls: ['./holidays.component.css'],
 })
 export class HolidaysComponent implements OnInit {
-  holidays: any;
+  holidays;
   constructor(
     private apiService: ApiService, 
     public route: ActivatedRoute) {}
@@ -17,6 +17,8 @@ export class HolidaysComponent implements OnInit {
     this.apiService.getHolidays().subscribe((data) => {
       this.holidays = data;
       console.log(this.holidays);
+      console.log(this.holidays.response.holidays);
+      console.log(this.holidays.response.holidays[0].name);
     });
   }
 }

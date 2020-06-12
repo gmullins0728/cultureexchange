@@ -1,3 +1,9 @@
 <main>
-    <div class="culture"></div>
+    <div class="culture-container">
+        
+            <ul *ngFor="let cultureTitle of culture.response.rows | slice: 0:3">
+                <div class="title"><h1>{{ cultureTitle.title }}</h1></div>
+            </ul>
+        
+    </div>
 </main>

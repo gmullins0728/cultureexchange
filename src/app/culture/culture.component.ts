@@ -12,14 +12,16 @@ export class CultureComponent implements OnInit {
 
   constructor(
     private apiService: ApiService,
-    public route: ActivatedRoute
-  ) { }
+    public route: ActivatedRoute) { }
+
 
   ngOnInit(): void {
     this.apiService.getCulture().subscribe((data) => {
       this.culture = data;
       console.log(this.culture);
+      console.log(this.culture.response.rows);
+      console.log(this.culture.response.rows[0].title);
     });
+    
   }
-
 }
