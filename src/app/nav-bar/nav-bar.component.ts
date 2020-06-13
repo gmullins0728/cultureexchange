@@ -12,10 +12,16 @@ export class NavBarComponent implements OnInit {
   holidays;
   routTo: string;
   culture;
+  home;
 
   constructor(
     private apiService: ApiService,
     public route: ActivatedRoute) {}
+
+    getHome() {
+        this.home = this.home;
+    }
+        
 
     getHolidays() {
       this.apiService.getHolidays().subscribe(data => {
@@ -36,17 +42,20 @@ export class NavBarComponent implements OnInit {
     }
 
   ngOnInit(): void {
-    this.getHolidays();
+    this.getHome();
     // get routes
     this.route.url.subscribe(params => {
       this.routTo = params[0]?.path;
 
       switch (this.routTo) {
+        case 'holidays':
+          this.getHolidays();
+          break;
+        
         case 'culture':
-          
           this.getCulture();
           break;
-
+        
         default:
           //route to home
 

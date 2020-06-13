@@ -9,18 +9,26 @@ body {
 }
 
 /* Style the header */
-
+.logo {
+  display: flex;
+  position: absolute;
+  margin-left: 145px;
+  margin-top: 30px;
+}
 
 /* Style the top navigation bar */
 .topnav {
-  overflow: hidden;
-  background-color: #333;
+  display: flex;
+  position: absolute;
+  margin-top: 110px;
+  color:white;
+  justify-content: right;
 }
 
 /* Style the topnav links */
 .topnav a {
-  float: left;
-  display: block;
+  /* float: left; */
+  display: inline-block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -30,11 +38,13 @@ body {
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: transparent;
+  color: #47a6dd;
 }
 
 .dropbtn {
+  display: flex;
+  position: absolute;
   background-color: #333;
   color: #f2f2f2;
   padding: 0;
@@ -45,6 +55,9 @@ body {
   text-decoration: none;
   list-style-type: none;
 }
-.right {
-  float: right;
+
+@media screen and (max-width: 1000px) {
+  .topnav {
+    display: none;
+  }
 }

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../api.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -11,8 +10,7 @@ export class CountriesComponent implements OnInit {
   public countries;
 
   constructor(
-    private route: ActivatedRoute,
-    private apiService: ApiService
+    public route: ActivatedRoute,
     ) { }
 
     getCountries(): void {
