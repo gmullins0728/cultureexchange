@@ -10,15 +10,15 @@ export class ApiService {
   holidayBaseUrl = 'https://calendarific.com/api/v2/holidays';
 
   // Smithsonian API KEY
-  cultureApiKey = 'VNxxwOeVfkefdMg8CvgxRyfFZRJife3c6D5FHa1v';
-  cultureBaseUrl = 'https://api.si.edu/openaccess/api/v1.0/category/history_culture/search';
+  // cultureApiKey = 'VNxxwOeVfkefdMg8CvgxRyfFZRJife3c6D5FHa1v';
+  // cultureBaseUrl = 'https://api.si.edu/openaccess/api/v1.0/category/history_culture/search';
 
   constructor(private http: HttpClient) {}
 
-  getTranslation() {
-    const api = 'https://translation.googleapis.com/$discovery/rest?version=v3';
-    return this.http.get(api);
-  }
+  // getTranslation() {
+  //   const api = 'https://translation.googleapis.com/$discovery/rest?version=v3?key=';
+  //   return this.http.get(api);
+  // }
 
   getHolidays() {
     const api = `${this.holidayBaseUrl}?&api_key=${this.holidayApiKey}&country=US&year=2020`;
@@ -26,7 +26,8 @@ export class ApiService {
   }
 
   getCulture() {
-    const api = `${this.cultureBaseUrl}?api_key=${this.cultureApiKey}&q=history&location=US`;
+    const api = 'https://data.opendatasoft.com/api/records/1.0/search/?dataset=world-heritage-list%40public-us&facet=category&facet=region&facet=states';
+    // const api = 'https://data.opendatasoft.com/api/records/1.0/search/?dataset=world-heritage-list%40public-us&facet=category&facet=region&facet=states&refine.states=China'
     return this.http.get(api);
   }
 }
