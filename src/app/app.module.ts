@@ -11,6 +11,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { CountriesComponent } from './countries/countries.component';
 import { HolidaysComponent } from './holidays/holidays.component';
 import { CultureComponent } from './culture/culture.component';
+import { MessengerComponent } from './messenger/messenger.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CultureComponent } from './culture/culture.component';
     ProfileComponent,
     CountriesComponent,
     HolidaysComponent,
-    CultureComponent
+    CultureComponent,
+    MessengerComponent
   ],
   imports: [
     BrowserModule,

@@ -4,12 +4,14 @@ import { MainComponent } from './main/main.component';
 import { CultureComponent } from './culture/culture.component';
 import { HolidaysComponent } from './holidays/holidays.component';
 import { CountriesComponent } from './countries/countries.component';
+import { MessengerComponent } from './messenger/messenger.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
   { path: 'culture', component: CultureComponent },
   { path: 'holidays', component: HolidaysComponent },
   { path: 'countries', component: CountriesComponent },
+  { path: 'messenger', component: MessengerComponent}
 ];
 
 @NgModule({
