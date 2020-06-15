@@ -42,7 +42,7 @@
   position: absolute;
   width: 35px;
   height: 20px;
-  top: 14px;
+  top: 8px;
   right: 10%;
   z-index: 5;
   cursor: pointer;
@@ -53,8 +53,8 @@
   width: 35px;
   height: 3px;
   border-radius: 3px;
-  background-color: #ecf0f1;
-  margin-top: 10px;
+  background-color: #0c0c0c;
+  margin: 4px;
   transition: all 0.3s ease-in-out;
 }
 

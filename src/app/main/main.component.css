@@ -21,7 +21,7 @@ article{
 
   p {
     margin-left: 35%;
-    font-size: 18px;
+    font-size: 25px;
     width: 30%;
     letter-spacing: 5px;
     word-spacing: 10px;
@@ -29,7 +29,6 @@ article{
   
   
   /* Theme section of the page */
-  
     .video-section {
       position: relative;
       height: 500px;
@@ -160,17 +159,19 @@ article{
   }
   
 
-/* @media screen and (max-width: 1200px) {
+ /* @media screen and (max-width: 1200px) {
   .wrapper {
     margin-top: 100px;
   }
+  @media only screen and (min-width: 600px) {...} 
   article,
-  .hero__video {
+  .wrapper-2 {
     grid-column-start: span 12;
+    margin-bottom: 50px;
   }
-  .hero__text,
-  .hero__video {
+  .invite,
+  footer {
     margin-bottom: 60px;
   }
 }
- */
+  */
