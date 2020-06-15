@@ -108,7 +108,7 @@
 
 .hamburger__nav--items a {
   margin-top: 40px;
-  color: #ecf0f1;
+  color: #072127;
   opacity: 0;
   text-decoration: none;
   font-size: 46px;
@@ -131,47 +131,6 @@
 
 /* What type of font to use? */
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-/* Style the header */
-.logo {
-  display: flex;
-  position: absolute;
-  margin-left: 145px;
-  margin-top: 30px;
-}
-
-/* Style the top navigation bar */
-.topnav {
-  display: flex;
-  position: absolute;
-  margin-top: 110px;
-  color:white;
-  justify-content: right;
-}
-
-/* Style the topnav links */
-.topnav a {
-  /* float: left; */
-  display: inline-block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  list-style-type: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: transparent;
-  color: #47a6dd;
-}
 
 .dropbtn {
   display: flex;
@@ -188,7 +147,10 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
-  .topnav {
+  .mobile__menu {
+    display: inherit;
+  }
+  .nav-links {
     display: none;
   }
-}
+} 

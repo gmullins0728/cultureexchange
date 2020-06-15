@@ -208,7 +208,7 @@
 }
 
 /* Hamburger */
-
+/* 
 .mobile__menu {
   display: none;
 }
@@ -244,10 +244,10 @@
 
 #toggle:checked + .hamburger .hamburger__meat {
   transform: rotate(45deg);
-  margin-top: -3px; /* Negative value of hamburger div height */
+  margin-top: -3px; /* Negative value of hamburger div height 
 }
 
-#toggle:checked + .hamburger .hamburger__bottom {
+/* #toggle:checked + .hamburger .hamburger__bottom {
   transform: scale(0);
 }
 
@@ -304,13 +304,6 @@
 .hamburger__nav--wrapper nav a:hover {
   opacity: 1;
   color: #e74d71;
-}
+} */ 
 
-@media screen and (max-width: 1000px) {
-  .mobile__menu {
-    display: inherit;
-  }
-  .nav__links {
-    display: none;
-  }
-} 
+
