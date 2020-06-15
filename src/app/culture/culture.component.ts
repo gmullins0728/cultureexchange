@@ -20,9 +20,8 @@ export class CultureComponent implements OnInit {
     this.apiService.getCulture().subscribe((data) => {
       this.culture = data;
       console.log(this.culture);
-      // console.log(this.culture.facet_groups[1].facets[0].name);
-      // console.log(this.culture.records[0].fields.short_description);
-      // console.log(this.culture.response.rows[0].title);
+      console.log(this.culture.facet_groups[1].facets[0].name);
+      console.log(this.culture.records[0].fields.short_description);
     });
     
     

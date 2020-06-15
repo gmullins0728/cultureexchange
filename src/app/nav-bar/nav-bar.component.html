@@ -1,74 +1,12 @@
-<main>
-  <!-- <header>
-    <img class="logo" src="../../assets/tcelogo.png">
-  </header> -->
-  <nav>
-    <ul class="topnav">
-      <a href="">
-        <li>Home</li>
-      </a>
-      <a href="">
-        <li>My Account</li>
-      </a>
-      <a href="holidays">
-        <li>Holidays</li>
-      </a>
-      <a href="culture">
-        <li>Culture</li>
-      </a>
-      <a href="">
-        <li>The Cultivators</li>
-      </a>
-      <a href="">
-        <li>Your Memories</li>
-      </a>
-      <a href="">
-        <li>Pen-Pals</li>
-      </a>
-      <a href="">
-        <li>Search</li>
-      </a>
-    </ul>
-  </nav>
-  <!-- <div class="dropdown">
-    <button (click)="myCountry()" class="dropbtn">Countries</button>
-    <div *ngIf="showDropDown === true" id="myDropdown" class="dropdown-content">
-      <a href="#">US</a>
-      <a href="#">Mexico</a>
-      <a href="#">France</a>
-      <a href="#">Germany</a>
-      <a href="#">Italy</a>
-      <a href="#">S. Korea</a>
-      <a href="#">Japan</a>
-      <a href="#">China</a>
-      <a href="#">India</a>
-      <a href="#">Russia</a>
-      <a href="#">Australia</a>
-      <a href="#">Egypt</a>
-      <a href="#">Brazil</a>
-      <a href="#">Canada</a>
-      <a href="#">Philippines</a>
-    </div>
-  </div>
-</main> -->
-
-
-
-
-
-
-
-<!-- <div class="topnav">
-    <a href=""><li>Home</li></a>
-    <a href=""><li>My Account</li></a>
-    <a href="holidays"><li>Holidays</li></a>
-    <a href="culture"><li>Culture</li></a>
-    <a href=""><li>The Cultivators</li></a>
-    <a href=""><li>Your Memories</li></a>
-    <a href=""><li>Pen-Pals</li></a>
-    <a href=""><li>Search</li></a>
-    <div class="dropdown">
-      <button (click)="myCountry()" class="dropbtn">Countries</button>
+<div class="nav-section">
+  <ul class="nav-links">
+    <li><a href="" class="logo"><img src="../../assets/mainLogo.png" alt="logo" height="210"/></a></li>
+    <li><a href="culture">Culture</a></li>
+    <li><a href="holidays">Holidays</a></li>
+    <li><a href="pen-pals">Community</a></li>
+    <li><a href="#"><img class="icon-1" src="../../assets/profilebtn.png" alt="profile-icon" width="30"/></a></li>
+    <li><a href="#"><img class="icon-2" src="../../assets/searchbtn.png" alt="search-icon" width="30"/></a></li>
+    <li><Button (click)="myCountry()" class="country-btn">Countries</Button></li>
       <div *ngIf="showDropDown === true" id="myDropdown" class="dropdown-content">
         <a href="#">US</a>
         <a href="#">Mexico</a>
@@ -86,6 +24,26 @@
         <a href="#">Canada</a>
         <a href="#">Philippines</a>
       </div>
-      
+  </ul>
+  
+  <div class="mobile__menu">
+    <input id="toggle" type="checkbox" />
+    <label class="hamburger" for="toggle">
+      <div class="hamburger__top"></div>
+      <div class="hamburger__meat"></div>
+      <div class="hamburger__bottom"></div>
+    </label>
+    <div class="hamburger__nav">
+      <div class="hamburger__nav--wrapper">
+        <nav class="hamburger__nav--items">
+          <li><a href="#">Countries</a></li>
+          <li><a href="culture">Cultures</a></li>
+          <li><a href="holidays">Holidays</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Search</a></li>
+        </nav>
+      </div>
     </div>
-  </div> -->
+  </div>
+</div>

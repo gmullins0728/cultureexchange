@@ -1,22 +1,17 @@
-<main>
-  <!-- ngFor for monthly holiday results -->
-  <h1>July 2020 Holidays</h1>
-
-  <div class="container"> 
-    <ul *ngFor="let holidaysTitle of holidays?.response?.holidays | slice: 0:10">
-        <div class="title"><h1>{{ holidaysTitle.name }}</h1></div>
-        <!-- <div class="country"><h1>{{holidaysTitle.country.name}}</h1></div> -->
-    </ul>
+<body>
+  <div
+    *ngFor="let holidaysTitle of holidays?.response?.holidays"
+    class="grid-container"
+  >
+    <div class="item1">
+      {{ holidaysTitle.date.datetime.month }}/{{
+        holidaysTitle.date.datetime.day
+      }}/{{ holidaysTitle.date.datetime.year }} <br />
+      {{ holidaysTitle.name }} <br />
+      <i>{{ holidaysTitle.country.name }} Holiday</i>
+    </div>
+    <div class="item2">
+      {{ holidaysTitle.description }}
+    </div>
   </div>
-    <!-- <section>
-      <div class="calendar">
-        <div class="holidaysName">
-          <p>{{ holidays.name }}</p>
-        </div>
-      </div> -->
-      <!-- *ngFor="let item of **ARRAY IN TS FILE**" -->
-      <!-- Insert interpolation/dot notation from data we are pulling -->
-      <!-- Possibly add learn more section on holidays? -->
-    <!-- </section> -->
-  <!-- </div> -->
-</main>
+</body>

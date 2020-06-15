@@ -1,79 +1,46 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>The Culture Exchange</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="./main.component.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  </head>
-  <body>
-    <div class="hero">
-      <header>
-        <img class="logo" src="../../assets/tcelogo.png">
-        <nav>
-          <ul class="nav__links">
-            <li><div class="dropdown">
-              <button (click)="myCountry()" class="dropbtn">Countries</button>
-              <div *ngIf="showDropDown === true" id="myDropdown" class="dropdown-content">
-                <ul>US</ul>
-                <ul>Mexico</ul>
-                <ul>France</ul>
-                <ul>Germany</ul>
-                <ul>Italy</ul>
-                <ul>S. Korea</ul>
-                <ul>Japan</ul>
-                <ul>China</ul>
-                <ul>India</ul>
-                <ul>Russia</ul>
-                <ul>Australia</ul>
-                <ul>Egypt</ul>
-                <ul>Brazil</ul>
-                <ul>Canada</ul>
-                <ul>Philippines</ul>
-              </div>
-            </div></li>
-            <!-- <li><a href="#">Countries</a></li> -->
-            <!-- <li><a href="#">Cultivators</a></li> -->
-            <li><a href="holidays">Events</a></li>
-            <li><a href="culture">Learn</a></li>
-            <!-- <li><a href="#">About</a></li> -->
-          </ul>
-        </nav>
-        <a href="#"><button class="med__button">Profile</button></a>
-        <div class="mobile__menu">
-          <input id="toggle" type="checkbox" />
-          <label class="hamburger" for="toggle">
-            <div class="hamburger__top"></div>
-            <div class="hamburger__meat"></div>
-            <div class="hamburger__bottom"></div>
-          </label>
-          <div class="hamburger__nav">
-            <div class="hamburger__nav--wrapper">
-              <nav class="hamburger__nav--items">
-                <li><a href="#">Countries</a></li>
-                <li><a href="#">Cultivators</a></li>
-                <li><a href="holidays">Events</a></li>
-                <li><a href="culture">Learn</a></li>
-                <li><a href="#">About</a></li>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </header>
-      <section class="hero__content">
-        <div class="hero__text">
-          <p class="hero__subtitle">
-            Share Culture | Learn Culture | Build Culture
-          </p>
-          <h1>Making The World A Bit Smaller</h1>
-          <div class="play__section">
-            <div id="play" class="play__button">
-              <img src="../../assets/playbtn.svg" alt="Play Button" />
-            </div>
-            <p>July's Theme: "It's A Celebration"</p>
-          </div>
-        </div>
-      </section>
+ <!-- the header section -->
+ <div class="wrapper">
+        
+  <article>
+      <h1>LEARN SHARE BUILD</h1>
+      <p>Together! We are making the world a bit smaller. Every forward step
+        broadens our horizon, and the horizon of those we love.
+      </p>
+  </article>
+  <img class="mr-culture" src="../../assets/host.png" alt="man" />
+</div>
+
+<!-- the theme section -->
+
+<div class="wrapper-2">
+  <div class="video-section">
+    <video playsinline autoplay muted loop poster="videoGIF.gif" id="bgvid">
+      <source src="../../assets/india.mp4" type="video/mp4">
+        video not supported
+    </video>
+    <div class="video-overlay">
+      <p>Every month is an opportunity to discover our likeness and differences.</p>
+      <button>Learn More</button>
+      <h2>Monthly Theme</h2>
+      <h3>July: "CELEBRATE"</h3>
+      
+      
     </div>
-  </body>
-</html>
+  </div>
+      
+
+<!-- call to action section -->
+<div class="invite">
+<h4>Join Our Community</h4>
+<Button>Sign Up</Button>
+</div>
+
+    <!-- the foot section that is duplicated on every page -->
+    <footer>
+      <img src="../../assets/mainLogo.png" alt="logo" width="100px">
+      <nav class="footer-nav">
+        <a href="about">About</a>
+        <a href="contact">Contact</a>
+      </nav>
+        <p>© 2020 DIVERSIFIED.CO</p>
+    </footer>

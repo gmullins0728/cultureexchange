@@ -20,7 +20,7 @@ export class ApiService {
   // }
 
   getHolidays() {
-    const api = `${this.holidayBaseUrl}?&api_key=${this.holidayApiKey}&country=US&year=2020`;
+    const api = `${this.holidayBaseUrl}?&api_key=${this.holidayApiKey}&country=all&month=7&year=2020`;
     return this.http.get(api);
   }
 

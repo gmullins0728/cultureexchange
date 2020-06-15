@@ -1,66 +1,143 @@
-/* What type of font to use? */
-
-/* * {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-} */
-
-/* Style the header */
-.logo {
+.nav-section{
   display: flex;
-  position: absolute;
-  margin-left: 145px;
-  margin-top: 30px;
+  justify-content: space-evenly;
+  overflow: hidden;
 }
 
-/* Style the top navigation bar */
-.topnav {
-  background-color: #333;
+.nav-links {
   display: flex;
-  position: absolute;
-  /* margin-top: 110px; */
-  margin: 0;
-  width: 100%;
-  color:white;
-  justify-content: right;
+  background-color: #fdffff9a;
 }
 
-/* Style the topnav links */
-.topnav a {
-  /* float: left; */
-  display: inline-block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color:#17bebb;
+  display: block;
+  margin-top: 40px;
+  padding: 0 55px 0 55px;
   text-decoration: none;
-  list-style-type: none;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: transparent;
-  color: #47a6dd;
-}
-
-.dropbtn {
-  display: flex;
-  position: absolute;
-  background-color: #333;
-  color: #f2f2f2;
-  padding: 0;
+.country-btn{
+  border-radius: 5px;
   border: none;
-  background: none;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  list-style-type: none;
+  background-color: #ffc914;
+  color: #fdfffffd;
+  height: 30px;
+  width: 100px;
+  margin-top: 40px;
 }
+
+/* Hamburger */
+
+.mobile__menu {
+  display: none;
+}
+
+.hamburger {
+  position: absolute;
+  width: 35px;
+  height: 30px;
+  top: 14px;
+  right: 10%;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.hamburger div {
+  position: relative;
+  width: 35px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #ecf0f1;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+#toggle {
+  display: none;
+}
+
+#toggle:checked + .hamburger .hamburger__top {
+  transform: rotate(-45deg);
+  margin-top: 17.5px; /* Half the size of hamburger height */
+}
+
+#toggle:checked + .hamburger .hamburger__meat {
+  transform: rotate(45deg);
+  margin-top: -3px; /* Negative value of hamburger div height */
+}
+
+#toggle:checked + .hamburger .hamburger__bottom {
+  transform: scale(0);
+}
+
+#toggle:checked + .hamburger + .hamburger__nav {
+  top: 0;
+}
+
+.hamburger__nav {
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  background-color: #050620;
+  top: -100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger__nav .hamburger__nav--wrapper {
+  position: relative;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.hamburger__nav--items {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger__nav--items a {
+  margin-top: 40px;
+  color: #ecf0f1;
+  opacity: 0;
+  text-decoration: none;
+  font-size: 46px;
+  letter-spacing: 3px;
+  transition: all 0.3s ease 0s;
+}
+
+.hamburger__nav--items a:first-child {
+  margin-top: 0;
+}
+
+.hamburger__nav--wrapper nav a {
+  opacity: 1;
+}
+
+.hamburger__nav--wrapper nav a:hover {
+  opacity: 1;
+  color: #e74d71;
+}
+
+
 
 @media screen and (max-width: 1000px) {
-  .topnav {
+  .mobile__menu {
+    display: inherit;
+  }
+  .nav-links {
     display: none;
   }
-}
+} 

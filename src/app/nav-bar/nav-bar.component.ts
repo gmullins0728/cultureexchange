@@ -62,6 +62,15 @@ export class NavBarComponent implements OnInit {
           break;
       }
     });
+
+    //this.getCountry();
+    //this.route.url.subscribe((params) => {
+    //this.routTo = params[0]?.path;
+
+    //switch(this.routTo) {
+    //case 'United States':
+    //}
+    //})
   }
 
   myCountry() {
