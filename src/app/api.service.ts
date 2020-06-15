@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
+
 @Injectable({
   providedIn: 'root',
 })
@@ -9,9 +10,7 @@ export class ApiService {
   holidayApiKey = '49f2edd5bf043a727f73649144947c6fc5aa7ebb7c856909112ef7a91a0f00b3';
   holidayBaseUrl = 'https://calendarific.com/api/v2/holidays';
 
-  // Smithsonian API KEY
-  // cultureApiKey = 'VNxxwOeVfkefdMg8CvgxRyfFZRJife3c6D5FHa1v';
-  // cultureBaseUrl = 'https://api.si.edu/openaccess/api/v1.0/category/history_culture/search';
+  
 
   constructor(private http: HttpClient) {}
 

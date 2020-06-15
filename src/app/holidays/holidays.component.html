@@ -3,8 +3,9 @@
   <h1>July 2020 Holidays</h1>
 
   <div class="container"> 
-    <ul *ngFor="let holidaysTitle of holidays.response.holidays | slice: 0:10">
+    <ul *ngFor="let holidaysTitle of holidays?.response?.holidays | slice: 0:10">
         <div class="title"><h1>{{ holidaysTitle.name }}</h1></div>
+        <!-- <div class="country"><h1>{{holidaysTitle.country.name}}</h1></div> -->
     </ul>
   </div>
     <!-- <section>

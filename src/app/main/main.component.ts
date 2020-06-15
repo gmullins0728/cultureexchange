@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.css'],
 })
 export class MainComponent implements OnInit {
-
+  showDropDown = false;
 
   
 
@@ -16,5 +16,10 @@ export class MainComponent implements OnInit {
 
   
     ngOnInit(): void {
+      
   }
+  myCountry() {
+    this.showDropDown = !this.showDropDown;
+  }
+  
 }

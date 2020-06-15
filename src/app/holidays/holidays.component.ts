@@ -18,7 +18,8 @@ export class HolidaysComponent implements OnInit {
       this.holidays = data;
       console.log(this.holidays);
       console.log(this.holidays.response.holidays);
-      console.log(this.holidays.response.holidays[0].name);
+      console.log(this.holidays.response.holidays[0]?.name);
+      console.log(this.holidays.response.holidays[0].country.id);
     });
   }
 }

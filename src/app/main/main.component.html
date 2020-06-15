@@ -12,11 +12,31 @@
         <img class="logo" src="../../assets/tcelogo.png">
         <nav>
           <ul class="nav__links">
-            <li><a href="#">Countries</a></li>
-            <li><a href="#">Cultivators</a></li>
+            <li><div class="dropdown">
+              <button (click)="myCountry()" class="dropbtn">Countries</button>
+              <div *ngIf="showDropDown === true" id="myDropdown" class="dropdown-content">
+                <ul>US</ul>
+                <ul>Mexico</ul>
+                <ul>France</ul>
+                <ul>Germany</ul>
+                <ul>Italy</ul>
+                <ul>S. Korea</ul>
+                <ul>Japan</ul>
+                <ul>China</ul>
+                <ul>India</ul>
+                <ul>Russia</ul>
+                <ul>Australia</ul>
+                <ul>Egypt</ul>
+                <ul>Brazil</ul>
+                <ul>Canada</ul>
+                <ul>Philippines</ul>
+              </div>
+            </div></li>
+            <!-- <li><a href="#">Countries</a></li> -->
+            <!-- <li><a href="#">Cultivators</a></li> -->
             <li><a href="holidays">Events</a></li>
             <li><a href="culture">Learn</a></li>
-            <li><a href="#">About</a></li>
+            <!-- <li><a href="#">About</a></li> -->
           </ul>
         </nav>
         <a href="#"><button class="med__button">Profile</button></a>

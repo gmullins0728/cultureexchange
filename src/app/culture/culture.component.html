@@ -12,14 +12,15 @@
     </section>
     <div class="culture-container">
         
-            <ul *ngFor="let cultureCountry of culture.facet_groups[1].facets | slice: 0:22">
+            <ul *ngFor="let cultureCountry of culture?.facet_groups[1]?.facets | slice: 0:22">
                 <div class="country"><h1>{{ cultureCountry.name }}</h1></div>
             </ul>
             
     </div>
     <div class="culture-description">
-        <div *ngFor="let cultureDescription of culture.records">
+        <div *ngFor="let cultureDescription of culture?.records">
             <div class="description"><p>{{ cultureDescription.fields.short_description }}</p></div>
         </div>
     </div>
+    
 </main>
