@@ -4,8 +4,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
@@ -31,7 +29,7 @@ import { MatButtonModule } from '@angular/material/button';
     CountriesComponent,
     HolidaysComponent,
     CultureComponent,
-    MessengerComponent
+    MessengerComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,9 +42,9 @@ import { MatButtonModule } from '@angular/material/button';
     MatInputModule,
     MatGridListModule,
     MatDividerModule,
-    MatButtonModule
+    MatButtonModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

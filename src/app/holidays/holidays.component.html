@@ -1,17 +1,26 @@
+<input
+  type="text"
+  id="myInput"
+  onkeyup="myFunction()"
+  placeholder="Search for names.."
+/>
 <body>
-  <div
-    *ngFor="let holidaysTitle of holidays?.response?.holidays"
-    class="grid-container"
-  >
-    <div class="item1">
-      {{ holidaysTitle.date.datetime.month }}/{{
-        holidaysTitle.date.datetime.day
-      }}/{{ holidaysTitle.date.datetime.year }} <br />
-      {{ holidaysTitle.name }} <br />
-      <i>{{ holidaysTitle.country.name }} Holiday</i>
-    </div>
-    <div class="item2">
-      {{ holidaysTitle.description }}
-    </div>
-  </div>
+  <table id="customers">
+    <tr class="header">
+      <th>Date of Celebration</th>
+      <th>Country of Celebration</th>
+      <th>Holiday name</th>
+      <th>Holiday description</th>
+    </tr>
+    <tr *ngFor="let holidaysTitle of holidays?.response?.holidays">
+      <td>
+        {{ holidaysTitle.date.datetime.month }}/{{
+          holidaysTitle.date.datetime.day
+        }}/{{ holidaysTitle.date.datetime.year }}
+      </td>
+      <td>{{ holidaysTitle.country.name }}</td>
+      <td>{{ holidaysTitle.name }}</td>
+      <td>{{ holidaysTitle.description }}</td>
+    </tr>
+  </table>
 </body>

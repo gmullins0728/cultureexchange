@@ -18,9 +18,24 @@ export class HolidaysComponent implements OnInit {
       this.holidays = data;
       console.log(this.holidays.response.holidays);
       console.log(this.holidays.response.holidays[0].name);
+      function myFunction() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById('myInput');
+        filter = input.value.toUpperCase();
+        table = document.getElementById('myTable');
+        tr = table.getElementsByTagName('tr');
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName('td')[0];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = '';
+            } else {
+              tr[i].style.display = 'none';
+            }
+          }
+        }
+      }
     });
   }
 }
-
-// https://calendarific.com/api/v2/holidays?&api_key=49f2edd5bf043a727f73649144947c6fc5aa7ebb7c856909112ef7a91a0f00b3&country=KR&year=2020
-// For above, get the country code for the countries that we have picked
