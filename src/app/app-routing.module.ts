@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: '', component: MainComponent },
   { path: 'culture', component: CultureComponent },
   { path: 'holidays', component: HolidaysComponent },
-  { path: 'countries', component: CountriesComponent },
+  { path: 'country', component: CountriesComponent },
   { path: 'messenger', component: MessengerComponent}
 ];
 

@@ -1,5 +1,5 @@
 <div class="image">
-<img src="../../assets/earthball.jpg" width="100%" height="350px"/>
+    <img src="../../assets/culture.png" width="100%" height="400px"/>
 </div>
 <main>
     <header>
@@ -10,7 +10,17 @@
         "Culture" refers to a group or community which shares common experiences that shape the way its members understand the world. It includes groups that we are born into, such as race, national origin, gender, class, or religion. It can also include a group we join or become part of. For example, it is possible to acquire a new culture by moving to a new country or region, by a change in our economic status, or by becoming disabled. When we think of culture this broadly we realize we all belong to many cultures at once.<br><br>
         </p>
     </section>
-    <div class="culture-container">
+
+    <a [routerLink]="['/culture', culture.id]">
+    <div *ngFor="let country of countryList">{{ country.name }}</div>
+    </a>
+
+    <!--<div *ngIf="selectedCountryCode">
+        <h2> {{ country.name | uppercase }} DESCRIPTION</h2>
+        <p> </p>
+
+    </div> -->
+    <!-- <div class="culture-container">
         
             <ul *ngFor="let cultureCountry of culture?.facet_groups[1]?.facets | slice: 0:22">
                 <div class="country"><h1>{{ cultureCountry.name }}</h1></div>
@@ -21,6 +31,6 @@
         <div *ngFor="let cultureDescription of culture?.records">
             <div class="description"><p>{{ cultureDescription.fields.short_description }}</p></div>
         </div>
-    </div>
+    </div> -->
     
 </main>

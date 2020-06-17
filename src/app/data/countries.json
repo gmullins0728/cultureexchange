@@ -1,0 +1,92 @@
+[
+    {
+        "name": "United States",
+        "code": "US",
+        "languagecode": "en-US",
+        "languagename": "English"
+    },
+    {
+        "name": "Mexico",
+        "code": "MX",
+        "languagecode": "es",
+        "languagename": "Spanish"
+    },
+    {
+      "name": "France",
+      "code": "FR",
+      "languagecode": "fr",
+      "languagename": "French"
+    },
+    {
+      "name": "Germany",
+      "code": "DE",
+      "languagecode": "de",
+      "languagename": "German"
+    },
+    {
+      "name": "Italy",
+      "code": "IT",
+      "languagecode": "it",
+      "languagename": "Italian"
+    },
+    {
+      "name": "Republic of Korea",
+      "code": "KR",
+      "languagecode": "ko-Kr",
+      "languagename": "Korean"
+    },
+    {
+      "name": "Japan",
+      "code": "JP",
+      "languagecode": "ja",
+      "languagename": "Japanese"
+    },
+    {
+      "name": "China",
+      "code": "CN",
+      "languagecode": "zh-Hans",
+      "languagename": "Chinese"
+    },
+    {
+      "name": "India",
+      "code": "IN",
+      "languagecode": "hi",
+      "languagename": "Hindi"
+    },
+    {
+      "name": "Russia",
+      "code": "RU",
+      "languagecode": "ru",
+      "languagename": "Russian"
+    },
+    {
+      "name": "Australia",
+      "code": "AU",
+      "languagecode": "en",
+      "languagename": "English"
+    },
+    {
+      "name": "Egypt",
+      "code": "EG",
+      "languagecode": "ar",
+      "languagename": "Arabic"
+    },
+    {
+      "name": "Brazil",
+      "code": "BR",
+      "languagecode": "pt",
+      "languagename": "Portuguese"
+    },
+    {
+      "name": "Canada",
+      "code": "CN",
+      "languagecode": "fr",
+      "languagename": "French"
+    },
+    {
+      "name": "Philippines",
+      "code": "PH",
+      "languagecode": "fil",
+      "languagename": "Filipino"
+    }
+]

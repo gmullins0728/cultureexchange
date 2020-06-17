@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
-import { ActivatedRoute } from '@angular/router';
-import { Country } from '../country';
+import { Router } from '@angular/router';
+import { Country } from '../models/country';
+import countryData from '../data/countries.json';
+
 
 @Component({
   selector: 'app-nav-bar',
@@ -9,13 +11,17 @@ import { Country } from '../country';
   styleUrls: ['./nav-bar.component.css'],
 })
 export class NavBarComponent implements OnInit {
-  showDropDown = false;
   holidays;
   routTo: string;
   culture;
   home;
+  selectedCountryCode: string;
+  countryList: Country[] = countryData;
 
-  constructor(private apiService: ApiService, public route: ActivatedRoute) {}
+
+  constructor(
+    private apiService: ApiService, 
+    public route: Router) {}
 
   getHome() {
     this.home = this.home;
@@ -42,38 +48,13 @@ export class NavBarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getHome();
-    // get routes
-    this.route.url.subscribe((params) => {
-      this.routTo = params[0]?.path;
-
-      switch (this.routTo) {
-        case 'holidays':
-          this.getHolidays();
-          break;
-
-        case 'culture':
-          this.getCulture();
-          break;
-
-        default:
-          //route to home
-
-          break;
-      }
-    });
-
-    //this.getCountry();
-    //this.route.url.subscribe((params) => {
-    //this.routTo = params[0]?.path;
-
-    //switch(this.routTo) {
-    //case 'United States':
-    //}
-    //})
+  
+  }
+  
+  onSubmit(selectedCountryCode) {
+    this.selectedCountryCode = selectedCountryCode;
+    console.log(selectedCountryCode);
+    this.route.navigate(['country'], { queryParams: {countryCode: selectedCountryCode}});
   }
 
-  myCountry() {
-    this.showDropDown = !this.showDropDown;
-  }
 }

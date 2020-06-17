@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Country } from '../models/country';
+
 
 @Component({
   selector: 'app-countries',
@@ -7,11 +9,15 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./countries.component.css']
 })
 export class CountriesComponent implements OnInit {
-  public countries;
+  @Input() countryList: Country;
+  countryCode: string;
 
-  constructor(
-    public route: ActivatedRoute,
-    ) { }
+  constructor(public route: ActivatedRoute,) {
+      this.route.queryParams.subscribe(params => {
+      this.countryCode = params["countryCode"];
+      }) 
+      console.log("This is the country code", this.countryCode);
+    }
 
     getCountries(): void {
       
