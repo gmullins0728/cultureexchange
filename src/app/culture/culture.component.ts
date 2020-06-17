@@ -7,18 +7,14 @@ import countryData from '../data/countries.json';
 @Component({
   selector: 'app-culture',
   templateUrl: './culture.component.html',
-  styleUrls: ['./culture.component.css']
+  styleUrls: ['./culture.component.css'],
 })
 export class CultureComponent implements OnInit {
   culture;
   selectedCountryCode: string;
   countryList: Country[] = countryData;
 
-  constructor(
-    private apiService: ApiService,
-    public route: ActivatedRoute) { }
-    
-
+  constructor(private apiService: ApiService, public route: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.apiService.getCulture().subscribe((data) => {
