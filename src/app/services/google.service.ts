@@ -13,7 +13,7 @@ export class GoogleService {
   }
 }
 
-const url = 'https://translation.googleapis.com/language/translate/v2?target=es&key=AIzaSyDKHFCMQiqFcNERDDcHqqcHRvNqZdqCLQU&q=${TEXT}';
+const url = 'https://translation.googleapis.com/language/translate/v2?target=es&key=API_KEY=${TEXT}';
 
 export class GoogleObj {
   q: string;
