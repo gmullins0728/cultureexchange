@@ -11,6 +11,7 @@ import { formatDate } from '@angular/common';
 export class HolidaysComponent implements OnInit {
   holidays: any[];
   holidayCopy: any[];
+  dayArray: any[];
   constructor(private route: ActivatedRoute, private apiService: ApiService) {}
 
   ngOnInit(): void {
@@ -23,29 +24,40 @@ export class HolidaysComponent implements OnInit {
 
   myFunction(val): void {
     console.log('holidays', this.holidays);
-    let results = this.holidays.filter((holiday) => val === holiday.country.name);
+    let results = this.holidays.filter(
+      (holiday) => val === holiday.country.name
+    );
     if (results.length > 0) {
       this.holidays = results;
     } else {
       this.holidays = this.holidayCopy;
     }
     console.log('results', results);
-    // this.holidays = results;
-    // let input, filter, table, tr, td, i, txtValue;
-    // input = document.getElementById('myInput');
-    // filter = input.value.toUpperCase();
-    // table = document.getElementById('myTable');
-    // tr = table.getElementsByTagName('tr');
-    // for (i = 0; i < tr.length; i++) {
-    //   td = tr[i].getElementsByTagName('td')[0];
-    //   if (td) {
-    //     txtValue = td.textContent || td.innerText;
-    //     if (txtValue.toUpperCase().indexOf(filter) > -1) {
-    //       tr[i].style.display = '';
-    //     } else {
-    //       tr[i].style.display = 'none';
-    //     }
-    //   }
-    // }
   }
+
+  getDays(val): void {
+    console.log('days', this.holidays);
+    let results = this.holidays.filter((holiday) => val === holiday.date.day);
+
+    if (results === this.holidayCopy) {
+      this.getDays;
+    }
+  }
+  // this.holidays = results;
+  // let input, filter, table, tr, td, i, txtValue;
+  // input = document.getElementById('myInput');
+  // filter = input.value.toUpperCase();
+  // table = document.getElementById('myTable');
+  // tr = table.getElementsByTagName('tr');
+  // for (i = 0; i < tr.length; i++) {
+  //   td = tr[i].getElementsByTagName('td')[0];
+  //   if (td) {
+  //     txtValue = td.textContent || td.innerText;
+  //     if (txtValue.toUpperCase().indexOf(filter) > -1) {
+  //       tr[i].style.display = '';
+  //     } else {
+  //       tr[i].style.display = 'none';
+  //     }
+  //   }
+  // }
 }
