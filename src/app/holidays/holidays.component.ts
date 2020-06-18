@@ -18,15 +18,12 @@ export class HolidaysComponent implements OnInit {
       this.holidays = data.response.holidays;
       this.holidayCopy = data.response.holidays;
       console.log('data', this.holidays);
-      // console.log(this.holidays[0].name);
     });
   }
 
   myFunction(val): void {
     console.log('holidays', this.holidays);
-    let results = this.holidays.filter(
-      (holiday) => val === holiday.country.name
-    );
+    let results = this.holidays.filter((holiday) => val === holiday.country.name);
     if (results.length > 0) {
       this.holidays = results;
     } else {

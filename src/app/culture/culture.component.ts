@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
 import { ActivatedRoute } from '@angular/router';
-import { Country } from '../models/country';
-import countryData from '../data/countries.json';
 
 @Component({
   selector: 'app-culture',
@@ -11,9 +9,7 @@ import countryData from '../data/countries.json';
 })
 export class CultureComponent implements OnInit {
   culture;
-  selectedCountryCode: string;
-  countryList: Country[] = countryData;
-  set1 = [1,2,3,4,5,6];
+
 
   constructor(private apiService: ApiService, public route: ActivatedRoute) {}
 
@@ -25,8 +21,6 @@ export class CultureComponent implements OnInit {
       console.log(this.culture.records[0].fields.short_description);
     });
     
-    // this.selectedCountryCode = this.selectedCountryCode;
-    // console.log(this.selectedCountryCode);
     
   }
 
