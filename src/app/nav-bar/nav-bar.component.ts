@@ -12,7 +12,6 @@ import countryData from '../data/countries.json';
 })
 export class NavBarComponent implements OnInit {
   holidays;
-  routTo: string;
   culture;
   home;
   selectedCountryCode: string;

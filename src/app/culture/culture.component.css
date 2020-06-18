@@ -1,0 +1,16 @@
+main {
+    background: radial-gradient(rgb(228, 214, 155), rgb(172, 172, 235))
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.name{
+    color: darkblue;
+    font-size: 20px;
+    font-weight: 400;
+}
