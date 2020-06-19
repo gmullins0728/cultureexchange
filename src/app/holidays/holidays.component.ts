@@ -40,9 +40,9 @@ export class HolidaysComponent implements OnInit {
   getDays(val): any {
     // console.log('days', new Date(this.holidays[0].date.iso).getTime());
 
-    var results = this.holidays.sort((d1, d2) => {
-      var dateA = new Date(d1?.date?.iso);
-      var dateB = new Date(d2?.date?.iso);
+      let results = this.holidays.sort((d1, d2) => {
+      let dateA = new Date(d1?.date?.iso);
+      let dateB = new Date(d2?.date?.iso);
       return dateA < dateB ? -1 : dateA > dateB ? 1 : 0;
     });
 
