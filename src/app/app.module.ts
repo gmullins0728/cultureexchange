@@ -19,7 +19,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
-import { NgpSortModule } from 'ngp-sort-pipe';
+import { CommunityComponent } from './community/community.component';
 
 @NgModule({
   declarations: [
@@ -31,13 +31,13 @@ import { NgpSortModule } from 'ngp-sort-pipe';
     HolidaysComponent,
     CultureComponent,
     MessengerComponent,
+    CommunityComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     RouterModule,
-    NgpSortModule,
     FormsModule,
     BrowserAnimationsModule,
     MatFormFieldModule,

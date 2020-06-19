@@ -35,29 +35,15 @@ export class HolidaysComponent implements OnInit {
     console.log('results', results);
   }
 
-  getDays(val): void {
-    console.log('days', this.holidays);
-    let results = this.holidays.filter((holiday) => val === holiday.date.day);
-
-    if (results === this.holidayCopy) {
-      this.getDays;
-    }
-  }
-  // this.holidays = results;
-  // let input, filter, table, tr, td, i, txtValue;
-  // input = document.getElementById('myInput');
-  // filter = input.value.toUpperCase();
-  // table = document.getElementById('myTable');
-  // tr = table.getElementsByTagName('tr');
-  // for (i = 0; i < tr.length; i++) {
-  //   td = tr[i].getElementsByTagName('td')[0];
-  //   if (td) {
-  //     txtValue = td.textContent || td.innerText;
-  //     if (txtValue.toUpperCase().indexOf(filter) > -1) {
-  //       tr[i].style.display = '';
-  //     } else {
-  //       tr[i].style.display = 'none';
-  //     }
-  //   }
+  // getDays(val): any {
+  //   console.log('days', this.holidays);
+  //   let results = this.holidays.sort((a:any, b:any) => {
+  //     console.log('a', a);
+  //     console.log('b', b);
+  //   });
+  //   console.log('results', results);
+  // if (results.length > 0) {
+  //   this.holidays = results.sort();
+  // }
   // }
 }

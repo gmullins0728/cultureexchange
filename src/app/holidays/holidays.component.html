@@ -28,9 +28,7 @@ date" /> -->
     </tr>
     <tr *ngFor="let holidaysTitle of holidays">
       <td>
-        {{ holidaysTitle.date.datetime.month }}/{{
-          holidaysTitle.date.datetime.day
-        }}/{{ holidaysTitle.date.datetime.year }}
+        {{ holidaysTitle.date.iso | date }}
       </td>
       <td>{{ holidaysTitle.country.name }}</td>
       <td>{{ holidaysTitle.name }}</td>
