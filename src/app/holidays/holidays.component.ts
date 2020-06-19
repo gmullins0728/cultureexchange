@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-holidays',
@@ -9,7 +10,8 @@ import { ApiService } from '../api.service';
 export class HolidaysComponent implements OnInit {
   holidays: any[];
   holidayCopy: any[];
-  constructor(private apiService: ApiService) {}
+  dayArray: any[];
+  constructor(private route: ActivatedRoute, private apiService: ApiService) {}
 
   ngOnInit(): void {
     this.apiService.getHolidays().subscribe((data: any) => {
@@ -21,12 +23,23 @@ export class HolidaysComponent implements OnInit {
 
   myFunction(val): void {
     console.log('holidays', this.holidays);
-    let results = this.holidays.filter((holiday) => val === holiday.country.name);
+    let results = this.holidays.filter(
+      (holiday) => val === holiday.country.name
+    );
     if (results.length > 0) {
       this.holidays = results;
     } else {
       this.holidays = this.holidayCopy;
     }
     console.log('results', results);
+  }
+
+  getDays(val): void {
+    console.log('days', this.holidays);
+    let results = this.holidays.filter((holiday) => val === holiday.date.day);
+
+    if (results === this.holidayCopy) {
+      this.getDays;
+    }
   }
 }

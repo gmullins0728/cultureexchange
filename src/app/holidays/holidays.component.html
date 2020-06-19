@@ -1,4 +1,16 @@
-<input type="text" id="myInput" (keyup)="myFunction($event.target.value)" placeholder="Search for names.." />
+<input
+  type="text"
+  id="myInput"
+  (keyup)="myFunction($event.target.value)"
+  placeholder="Search for names.."
+/>
+
+<input
+  type="button"
+  id="getDay"
+  (click)="getDays($event.target.value)"
+  value="Sort by date"
+/>
 
 <body>
   <table id="myTable">
