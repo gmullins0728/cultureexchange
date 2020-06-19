@@ -1,107 +1,107 @@
 [
-    {
-        "id":  1,
-        "name": "United States",
-        "code": "US",
-        "languagecode": "en-US",
-        "languagename": "English"
-    },
-    {
-      "id":  2,
-        "name": "Mexico",
-        "code": "MX",
-        "languagecode": "es",
-        "languagename": "Spanish"
-    },
-    {
-      "id":  3,
-      "name": "France",
-      "code": "FR",
-      "languagecode": "fr",
-      "languagename": "French"
-    },
-    {
-      "id":  4,
-      "name": "Germany",
-      "code": "DE",
-      "languagecode": "de",
-      "languagename": "German"
-    },
-    {
-      "id":  5,
-      "name": "Italy",
-      "code": "IT",
-      "languagecode": "it",
-      "languagename": "Italian"
-    },
-    {
-      "id":  6,
-      "name": "Republic of Korea",
-      "code": "KR",
-      "languagecode": "ko-Kr",
-      "languagename": "Korean"
-    },
-    {
-      "id":  7,
-      "name": "Japan",
-      "code": "JP",
-      "languagecode": "ja",
-      "languagename": "Japanese"
-    },
-    {
-      "id":  8,
-      "name": "China",
-      "code": "CN",
-      "languagecode": "zh-Hans",
-      "languagename": "Chinese"
-    },
-    {
-      "id":  9,
-      "name": "India",
-      "code": "IN",
-      "languagecode": "hi",
-      "languagename": "Hindi"
-    },
-    {
-      "id":  10,
-      "name": "Russia",
-      "code": "RU",
-      "languagecode": "ru",
-      "languagename": "Russian"
-    },
-    {
-      "id":  11,
-      "name": "Australia",
-      "code": "AU",
-      "languagecode": "en",
-      "languagename": "English"
-    },
-    {
-      "id":  12,
-      "name": "Egypt",
-      "code": "EG",
-      "languagecode": "ar",
-      "languagename": "Arabic"
-    },
-    {
-      "id":  13,
-      "name": "Brazil",
-      "code": "BR",
-      "languagecode": "pt",
-      "languagename": "Portuguese"
-    },
-    {
-      "id":  14,
-      "name": "Canada",
-      "code": "CA",
-      "languagecode": "fr",
-      "languagename": "French"
-    },
-    {
-      "id":  15,
-      "name": "Philippines",
-      "code": "PH",
-      "languagecode": "fil",
-      "languagename": "Filipino"
-    }
+  {
+    "id": 1,
+    "name": "Australia",
+    "code": "AU",
+    "languagecode": "en",
+    "languagename": "English"
+  },
+  {
+    "id": 2,
+    "name": "Brazil",
+    "code": "BR",
+    "languagecode": "pt",
+    "languagename": "Portuguese"
+  },
+  {
+    "id": 3,
+    "name": "China",
+    "code": "CN",
+    "languagecode": "zh-Hans",
+    "languagename": "Chinese"
+  },
+  {
+    "id": 4,
+    "name": "Egypt",
+    "code": "EG",
+    "languagecode": "ar",
+    "languagename": "Arabic"
+  },
+  {
+    "id": 5,
+    "name": "France",
+    "code": "FR",
+    "languagecode": "fr",
+    "languagename": "French"
+  },
+  {
+    "id": 6,
+    "name": "Germany",
+    "code": "DE",
+    "languagecode": "de",
+    "languagename": "German"
+  },
+  {
+    "id": 7,
+    "name": "India",
+    "code": "IN",
+    "languagecode": "hi",
+    "languagename": "Hindi"
+  },
+  {
+    "id": 8,
+    "name": "Italy",
+    "code": "IT",
+    "languagecode": "it",
+    "languagename": "Italian"
+  },
+  {
+    "id": 9,
+    "name": "Japan",
+    "code": "JP",
+    "languagecode": "ja",
+    "languagename": "Japanese"
+  },
+  {
+    "id": 10,
+    "name": "Mexico",
+    "code": "MX",
+    "languagecode": "es",
+    "languagename": "Spanish"
+  },
+  {
+    "id": 11,
+    "name": "Nigeria",
+    "code": "CA",
+    "languagecode": "yo",
+    "languagename": "Yoruba"
+  },
+  {
+    "id": 12,
+    "name": "Philippines",
+    "code": "PH",
+    "languagecode": "fil",
+    "languagename": "Filipino"
+  },
+  {
+    "id": 13,
+    "name": "Republic of Korea",
+    "code": "KR",
+    "languagecode": "ko-Kr",
+    "languagename": "Korean"
+  },
+  {
+    "id": 14,
+    "name": "Russia",
+    "code": "RU",
+    "languagecode": "ru",
+    "languagename": "Russian"
+  },
+  {
+    "id": 15,
+    "name": "United States",
+    "code": "US",
+    "languagecode": "en-US",
+    "languagename": "English"
+  }
 ]
