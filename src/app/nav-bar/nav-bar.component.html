@@ -10,12 +10,11 @@ function googleTranslateElementInit() {
 
 <div class="nav-section">
   <ul class="nav-links">
-    <li><a href="" class="logo"><img src="../../assets/mainLogo.png" alt="logo" height="210"/></a></li>
+    <li><a href="" class="logo"><img src="../../assets/mainLogo.png" alt="logo" height="75"/></a></li>
     <li><a href="culture">Culture</a></li>
     <li><a href="holidays">Holidays</a></li>
-    <li><a href="pen-pals">Community</a></li>
-    <li><a href="#"><img class="icon-1" src="../../assets/profilebtn.png" alt="profile-icon" width="30"/></a></li>
-    <li><a href="#"><img class="icon-2" src="../../assets/searchbtn.png" alt="search-icon" width="30"/></a></li>
+    <li><a href="community">Community</a></li>
+    
     <form (change) ="onSubmit(selectedCountryCode)">
       <div id="myDropdown" class="dropdown-content">
         <select [(ngModel)]="selectedCountryCode" name="selectedCountryCode">
@@ -41,7 +40,6 @@ function googleTranslateElementInit() {
           <li><a href="holidays">Holidays</a></li>
           <li><a href="#">Community</a></li>
           <li><a href="#">Profile</a></li>
-          <li><a href="#">Search</a></li>
         </nav>
       </div>
     </div>
