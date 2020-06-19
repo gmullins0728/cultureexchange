@@ -1,7 +1,10 @@
+
 .info-cards{
   position: relative;
-  display: flex;
   height: 100vh;
+  margin-bottom: 200px;
+  background-size: cover;
+  background-color: #e0e0e0;
 }
 
 *{
@@ -313,3 +316,28 @@
     display: block;
     font-size: 18px;
   }
+
+  /* Footer section */
+
+.info-cards footer {
+  background-color: #2e282a;
+  height: 100px;
+  width:100%;
+  position: absolute;
+  margin-top: 100%;
+}
+
+.info-cards footer a{
+    color: white;
+    position: absolute;
+    left: 45%;
+}
+
+.info-cards footer p {
+  position: absolute;
+  color: white;
+  font-size: 10px;
+  bottom: 2%;
+  margin-left: 45%;
+}
+

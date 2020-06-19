@@ -1,16 +1,49 @@
 main {
-    background: radial-gradient(rgb(228, 214, 155), rgb(172, 172, 235))
+  
+}
+header {
+  background: url("../../assets/paris.jpg") no-repeat;
+  background-size: cover;
+  height: 85vh;
+  color: white;
+  text-align: center;
+  overflow: hidden;
 }
 
 .title {
-    color: white;
-    text-align: center;
-    font-size: 60px;
-    font-weight: 600;
+  color: #1bb8b5;
+  text-align: center;
+  margin-top: 20%;
+  font-size: 80px;
+  font-weight: 600;
 }
 
-.name{
-    color: darkblue;
-    font-size: 20px;
-    font-weight: 400;
+.name {
+  color:#15a5a3;
+  font-size: 20px;
+  font-weight: 400;
 }
+p{
+    margin-left:20px;
+    margin-right: 20px;
+}
+footer {
+    background-color: #2e282a;
+    height: 100px;
+    position: relative;
+  }
+  footer a{
+    color: white;
+    position: absolute;
+    left: 45%;
+  }
+  footer p {
+    position: absolute;
+    color: white;
+    font-size: 10px;
+    bottom: 2%;
+    left: 5%;
+  }
+  
+  
+  
