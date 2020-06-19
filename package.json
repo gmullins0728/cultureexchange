@@ -30,7 +30,6 @@
     "google-maps": "^4.2.3",
     "google-translate": "^3.0.0",
     "google-translate-api": "^2.3.0",
-    "ngp-sort-pipe": "0.0.4",
     "nodemon": "^2.0.4",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",

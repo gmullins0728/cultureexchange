@@ -6,20 +6,20 @@
         <div class="title">WHAT IS CULTURE?</div>
     </header>
     <section>
-        <span>No matter where you live, you are working with and establishing with people--people who all have cultures.<br><br>
+        <div class="span">No matter where you live, you are working with and establishing with people--people who all have cultures.<br><br>
             Culture is a complex concept which influences virtually every aspect of our lives – both consciously and subconsciously.  On the more visible level, our culture impacts the way we greet each other, the traditions we celebrate and the food we eat.  Aspects of culture which are less apparent include our beliefs, values and world views which influence the visible parts of culture.<br><br>
             There have been many attempts to define culture.  The most common definition describes culture as a system of values and beliefs which we share with others, all of which gives us a sense of belonging or identity. Culture is comprised of elements such as history, religion, language, traditions, values, beliefs and customs. It is instilled early on in life but is constantly evolving.  It defines who we are and how we should behave and must be understood before effective communication can occur.<br>
             Each country have their own cultural history as well as traditions celebrated. To learn more about a country, click on desired country name below.
-        </span>
+        </div>
     </section>
 
-    <div *ngFor="let country of countryList" class="countryList">
+    <div class="countryList" *ngFor="let country of countryList" >
         <a [routerLink]='"."' [fragment]="country.name">{{country.name}}</a>
     </div>
     
     <div class="description" *ngFor="let country of countryList" [attr.id]='country.name' >
-        <h1>{{country.name}}</h1>
-        <p>{{country.description}}</p>
+        <div class="h1">{{country.name}}</div>
+        <div class="p">{{country.description}}</div>
         <a [routerLink]='culture' >Back to Top Page</a>
     </div>
 </main>

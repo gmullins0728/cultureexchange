@@ -9,8 +9,35 @@ main {
     font-weight: 600;
 }
 
-.name{
+.span {
+    display: flex;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+.countryList {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    /* justify-content: center;
+    padding: 20px; */
     color: darkblue;
-    font-size: 20px;
+    text-decoration: none;
+}
+
+.countryList a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.description {
+    color: darkblue;
+}
+
+.h1 {
+    text-align: center;
+    font-size: 40px;
     font-weight: 400;
+    padding: 20px;
 }
