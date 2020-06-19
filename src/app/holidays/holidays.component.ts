@@ -8,23 +8,26 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./holidays.component.css'],
 })
 export class HolidaysComponent implements OnInit {
-  holidays: any[];
-  holidayCopy: any[];
-  dayArray: any[];
+  holidays: any[] = [];
+  holidayCopy: any[] = [];
+  dayArray: string[] = [];
   constructor(private route: ActivatedRoute, private apiService: ApiService) {}
 
   ngOnInit(): void {
     this.apiService.getHolidays().subscribe((data: any) => {
       this.holidays = data.response.holidays;
       this.holidayCopy = data.response.holidays;
-      console.log('data', this.holidays);
+
+      this.dayArray = this.holidays.map((h) => h?.date?.iso);
+      // console.log('data', this.holidays);
     });
   }
 
   myFunction(val): void {
-    console.log('holidays', this.holidays);
-    let results = this.holidays.filter(
-      (holiday) => val === holiday.country.name
+    //console.log('holidays', this.holidays);
+    console.log(val.key);
+    let results = this.holidays.filter((holiday) =>
+      holiday.country.name.includes(val.key)
     );
     if (results.length > 0) {
       this.holidays = results;
@@ -34,15 +37,17 @@ export class HolidaysComponent implements OnInit {
     console.log('results', results);
   }
 
-  // getDays(val): any {
-  //   console.log('days', this.holidays);
-  //   let results = this.holidays.sort((a:any, b:any) => {
-  //     console.log('a', a);
-  //     console.log('b', b);
-  //   });
-  //   console.log('results', results);
-  // if (results.length > 0) {
-  //   this.holidays = results.sort();
-  // }
-  // }
+  getDays(val): any {
+    // console.log('days', new Date(this.holidays[0].date.iso).getTime());
+
+    var results = this.holidays.sort((d1, d2) => {
+      var dateA = new Date(d1?.date?.iso);
+      var dateB = new Date(d2?.date?.iso);
+      return dateA < dateB ? -1 : dateA > dateB ? 1 : 0;
+    });
+
+    if (results.length > 0) {
+      this.holidays = results.sort();
+    }
+  }
 }

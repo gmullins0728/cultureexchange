@@ -19,7 +19,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
-import { CommunityComponent } from './community/community.component';
+import { CommunityComponent } from '../app/community/community.component';
 
 
 @NgModule({

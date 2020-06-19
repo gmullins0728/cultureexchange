@@ -25,7 +25,7 @@
   font-size: 20px;
 }
 
-.country-btn{
+.{
   border-radius: 5px;
   border: none;
   background-color: #ffc914;
@@ -140,7 +140,6 @@
   align-items: center;
   justify-content: center;
 }
-
 .hamburger__nav--items a {
   margin-top: 40px;
   color: #ecf0f1;
