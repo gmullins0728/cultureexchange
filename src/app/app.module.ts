@@ -19,7 +19,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 import { CommunityComponent } from '../app/community/community.component';
-
+import { ChatloginComponent } from './chat/chatlogin/chatlogin.component';
+import { ChatmainComponent } from './chat/chatmain/chatmain.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,8 @@ import { CommunityComponent } from '../app/community/community.component';
     HolidaysComponent,
     CultureComponent,
     CommunityComponent,
+    ChatloginComponent,
+    ChatmainComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +48,7 @@ import { CommunityComponent } from '../app/community/community.component';
     MatDividerModule,
     MatButtonModule,
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
