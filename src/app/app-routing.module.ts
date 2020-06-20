@@ -4,7 +4,7 @@ import { MainComponent } from './main/main.component';
 import { CultureComponent } from './culture/culture.component';
 import { HolidaysComponent } from './holidays/holidays.component';
 import { CountriesComponent } from './countries/countries.component';
-import { MessengerComponent } from './messenger/messenger.component';
+import { CommunityComponent } from './community/community.component';
 
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'culture', component: CultureComponent },
   { path: 'holidays', component: HolidaysComponent },
   { path: 'country', component: CountriesComponent },
-  { path: 'messenger', component: MessengerComponent},
+  { path: 'community', component: CommunityComponent },
   { path: '', redirectTo: 'culture', pathMatch: 'full'}
 ];
 

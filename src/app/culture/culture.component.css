@@ -41,3 +41,21 @@ main {
     font-weight: 400;
     padding: 20px;
 }
+
+footer {
+    background-color: #2e282a;
+    height: 100px;
+    position: relative;
+  }
+  footer a{
+    color: white;
+    position: absolute;
+    left: 45%;
+  }
+  footer p {
+    position: absolute;
+    color: white;
+    font-size: 10px;
+    bottom: 2%;
+    left: 5%;
+  }

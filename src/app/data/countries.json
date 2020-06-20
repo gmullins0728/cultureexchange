@@ -99,7 +99,7 @@
         "id": 13,
         "name": "South Korea",
         "code": "KR",
-        "languagecode": "ko-Kr",
+        "languagecode": "ko",
         "languagename": "Korean",
         "description": "The Korean culture is vibrant in color and steeped in history. Temples and palaces such as the Gyeongbok Palace and traditional dresses like the formal hanbok showcase ancient traditions which you can see at the National Museum of Korea in Seoul. Changdeokgung Palace is also a great place to see the architectural heritage of Korea. In Asia K-pop or Korean pop has also become extremely popular. Known for their dynamically choreographed dance routines and beautiful stars K-pop groups have obtained serious celebrity status. Seoul is a great place to buy CDs DVDs and goods from groups like Kara Super Junior and Shinee. Korean television series have also become well known around the world which are dubbed into various languages and broadcast around the globe. Whether soap opera or historical drama these stories showcase life in Korea."
     },
@@ -115,7 +115,7 @@
         "id": 15,
         "name": "United States",
         "code": "US",
-        "languagecode": "en-US",
+        "languagecode": "en",
         "languagename": "English",
         "description": "American culture is often described as a consumer culture as a result of the economic growth following 1945 and the expansion of creations like shopping malls. However, the modern US is also shaped by its multiculturalism which began in the late 1800s when Irish and European migrants flocked to the country in the thousands. Today society is respectful of a number of cuisines languages festivals and faiths that visitors can experience when traveling across the United States. Despite its historical suppression the Native American culture is still alive and thriving throughout the country. This is evident in the far-flung states of Alaska and Hawaii. In addition the US also boasts an incredibly diverse regional culture. For instance visitors can see a significantly different way of life from gaudy Southern California to preppy New England and the conservative Mississippi basin."
     }

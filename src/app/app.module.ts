@@ -12,7 +12,6 @@ import { ProfileComponent } from './profile/profile.component';
 import { CountriesComponent } from './countries/countries.component';
 import { HolidaysComponent } from './holidays/holidays.component';
 import { CultureComponent } from './culture/culture.component';
-import { MessengerComponent } from './messenger/messenger.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -31,7 +30,6 @@ import { CommunityComponent } from '../app/community/community.component';
     CountriesComponent,
     HolidaysComponent,
     CultureComponent,
-    MessengerComponent,
     CommunityComponent,
   ],
   imports: [
