@@ -5,6 +5,8 @@ import { CultureComponent } from './culture/culture.component';
 import { HolidaysComponent } from './holidays/holidays.component';
 import { CountriesComponent } from './countries/countries.component';
 import { CommunityComponent } from './community/community.component';
+import { ChatmainComponent } from './chat/chatmain/chatmain.component';
+import { ChatloginComponent } from './chat/chatlogin/chatlogin.component';
 
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
@@ -18,7 +20,9 @@ const routes: Routes = [
   { path: 'holidays', component: HolidaysComponent },
   { path: 'country', component: CountriesComponent },
   { path: 'community', component: CommunityComponent },
-  { path: '', redirectTo: 'culture', pathMatch: 'full'}
+  { path: 'chatlogin', component: ChatloginComponent },
+  { path: 'chatmain', component: ChatmainComponent },
+  { path: '', redirectTo: 'culture', pathMatch: 'full' },
 ];
 
 @NgModule({
