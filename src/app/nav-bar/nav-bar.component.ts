@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../api.service';
+import { ApiService } from '../services/api.service';
 import { Router } from '@angular/router';
 import { Country } from '../models/country';
 import countryData from '../data/countries.json';
@@ -30,16 +30,6 @@ export class NavBarComponent implements OnInit {
     this.apiService.getHolidays().subscribe(
       (data) => {
         this.holidays = data;
-      },
-      (err) => console.log(err),
-      () => console.log(`success`)
-    );
-  }
-
-  getCulture() {
-    this.apiService.getCulture().subscribe(
-      (data) => {
-        this.culture = data;
       },
       (err) => console.log(err),
       () => console.log(`success`)
