@@ -4,6 +4,7 @@ export class Country {
         public name: string,
         public code: string,
         public languagecode: string,
-        public languagename: string
+        public languagename: string,
+        public description: string
     ) { }
 }

@@ -142,7 +142,6 @@ select{
   align-items: center;
   justify-content: center;
 }
-
 .hamburger__nav--items a {
   margin-top: 40px;
   color: #ecf0f1;
