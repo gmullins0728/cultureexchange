@@ -97,19 +97,19 @@
     },
     {
         "id": 13,
-        "name": "South Korea",
-        "code": "KR",
-        "languagecode": "ko",
-        "languagename": "Korean",
-        "description": "The Korean culture is vibrant in color and steeped in history. Temples and palaces such as the Gyeongbok Palace and traditional dresses like the formal hanbok showcase ancient traditions which you can see at the National Museum of Korea in Seoul. Changdeokgung Palace is also a great place to see the architectural heritage of Korea. In Asia K-pop or Korean pop has also become extremely popular. Known for their dynamically choreographed dance routines and beautiful stars K-pop groups have obtained serious celebrity status. Seoul is a great place to buy CDs DVDs and goods from groups like Kara Super Junior and Shinee. Korean television series have also become well known around the world which are dubbed into various languages and broadcast around the globe. Whether soap opera or historical drama these stories showcase life in Korea."
-    },
-    {
-        "id": 14,
         "name": "Russia",
         "code": "RU",
         "languagecode": "ru",
         "languagename": "Russian",
         "description": "The culture of Russia is hard to define due to its massive size and plethora of ethnicities. However certain aspects such as family loyalty and dependency immense pride in the land and its traditions and endurance are common traits. The collective spirit developed by centuries of living in small agricultural communities and during the Soviet era is strong as is the determination of the Russian people to better their lives by any means possible. Russians love music the arts literature philosophy and theater as well as eating and drinking and could be described as quintessential party people. Highly talented in cultural pursuits they are also very superstitious with long lists of rituals based on folklore and magical beliefs still a part of everyday life. Russian folk songs and dances are part of most celebrations and traditional instruments such as the balalaika and gypsy guitar are still popular today."
+    },
+    {
+        "id": 14,
+        "name": "South Korea",
+        "code": "KR",
+        "languagecode": "ko",
+        "languagename": "Korean",
+        "description": "The Korean culture is vibrant in color and steeped in history. Temples and palaces such as the Gyeongbok Palace and traditional dresses like the formal hanbok showcase ancient traditions which you can see at the National Museum of Korea in Seoul. Changdeokgung Palace is also a great place to see the architectural heritage of Korea. In Asia K-pop or Korean pop has also become extremely popular. Known for their dynamically choreographed dance routines and beautiful stars K-pop groups have obtained serious celebrity status. Seoul is a great place to buy CDs DVDs and goods from groups like Kara Super Junior and Shinee. Korean television series have also become well known around the world which are dubbed into various languages and broadcast around the globe. Whether soap opera or historical drama these stories showcase life in Korea."
     },
     {
         "id": 15,
