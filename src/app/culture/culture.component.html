@@ -13,10 +13,12 @@
         </div>
     </section>
 
+    <!-- List of Countries -->
     <div class="countryList" *ngFor="let country of countryList" >
         <a [routerLink]='"."' [fragment]="country.name">{{country.name}}</a>
     </div>
     
+    <!-- Each Country with small summary -->
     <div class="description" *ngFor="let country of countryList" [attr.id]='country.name' >
         <div class="h1">{{country.name}}</div>
         <div class="p">{{country.description}}</div>

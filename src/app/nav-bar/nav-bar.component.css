@@ -25,14 +25,14 @@
   font-size: 20px;
 }
 
-.{
+/* .{
   border-radius: 5px;
   border: none;
   background-color: #ffc914;
   color: #fdfffffd;
   height: 30px;
   width: 100px;
-}
+} */
 /* Hamburger */
 
 .mobile__menu {
@@ -131,22 +131,6 @@
   opacity: 1;
   color: #e74d71;
 }
-
-/* What type of font to use? */
-
-/*.dropbtn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.hamburger__nav--items a {
-  margin-top: 40px;
-  color: #ecf0f1;
-  opacity: 0;
-  text-decoration: none;
-  list-style-type: none; 
-}*/
 
 .hamburger__nav--items a:first-child {
   margin-top: 0;

@@ -14,7 +14,7 @@ export class NavBarComponent implements OnInit {
   holidays;
   culture;
   home;
-  selectedCountryCode: string;
+  selectedCountryId: number;
   countryList: Country[] = countryData;
 
 
@@ -22,28 +22,15 @@ export class NavBarComponent implements OnInit {
     private apiService: ApiService, 
     public route: Router) {}
 
-  getHome() {
-    this.home = this.home;
-  }
-
-  getHolidays() {
-    this.apiService.getHolidays().subscribe(
-      (data) => {
-        this.holidays = data;
-      },
-      (err) => console.log(err),
-      () => console.log(`success`)
-    );
-  }
 
   ngOnInit(): void {
   
   }
   
-  onSubmit(selectedCountryCode) {
-    this.selectedCountryCode = selectedCountryCode;
-    console.log(selectedCountryCode);
-    this.route.navigate(['country'], { queryParams: {countryCode: selectedCountryCode}});
+  onSubmit(selectedCountryId) {
+    this.selectedCountryId = selectedCountryId;
+    console.log(selectedCountryId);
+    this.route.navigate(['country'], { queryParams: {countryCode: selectedCountryId}});
   }
 
 }
