@@ -11,15 +11,15 @@ import countryData from '../data/countries.json';
 })
 export class CultureComponent implements OnInit {
   culture;
-  selectedCountryCode: string;
+  selectedCountryId: number;
   countryList: Country[] = countryData;
   
 
   constructor(
     private apiService: ApiService, 
     public route: ActivatedRoute) {
-      this.selectedCountryCode = this.selectedCountryCode;
-      console.log(this.selectedCountryCode);
+      this.selectedCountryId = this.selectedCountryId;
+      console.log(this.selectedCountryId);
   }
     
     

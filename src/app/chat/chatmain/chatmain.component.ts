@@ -1,12 +1,4 @@
-import {
-  Component,
-  OnInit,
-  AfterViewInit,
-  ViewChild,
-  ViewChildren,
-  ElementRef,
-  QueryList,
-} from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild, ViewChildren, ElementRef, QueryList } from '@angular/core';
 import { Event } from '../../models/event';
 import { Message } from '../../models/message';
 import { User } from '../../models/user';

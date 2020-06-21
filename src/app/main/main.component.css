@@ -63,7 +63,7 @@ p {
 }
 .video-overlay button a {
   position: absolute;
-  top: 70%;
+  top: 75%;
   left: 40%;
   font-size: 30px;
   color: #2e282a9c;
@@ -81,7 +81,7 @@ p {
 .invite {
   background: url("../../assets/travelerMap.jpg") no-repeat;
   background-size: cover;
-  height: 400px;
+  height: 300px;
   text-align: center;
   overflow: auto;
 }
@@ -91,17 +91,28 @@ p {
   color: #17bebb;
 }
 
-.invite button {
-  font-size: 20px;
-  color: #2e282a9c;
-  text-transform: uppercase;
-  border-radius: 5px;
-  border: none;
-  background-color: #ffc914;
-  color: #17bebb;
-  height: 30px;
-  width: 200px;
+.invite .social_media ul{
+  margin-left:40%;
+  margin-top: 5%;
+  display: flex;
 }
+
+.invite .social_media ul li{
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(to right,#01a9ac,#01dbdf);
+  margin-right: 10px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 45px;
+}
+
+.invite .social_media ul li a{
+  color :#fff;
+  display: block;
+  font-size: 18px;
+}
+
 
 /* Footer section */
 
@@ -110,7 +121,7 @@ footer {
   height: 100px;
   position: relative;
 }
-footer a{
+footer a {
   color: white;
   position: absolute;
   left: 45%;
