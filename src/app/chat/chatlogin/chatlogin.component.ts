@@ -12,7 +12,7 @@ const CHAT_URL: string = '/chatmain';
   styleUrls: ['./chatlogin.component.css'],
 })
 export class ChatloginComponent {
-  countrylist: Country[] = countryData;
+  countryList: Country[] = countryData;
   username: string;
   country: string;
   language: string;

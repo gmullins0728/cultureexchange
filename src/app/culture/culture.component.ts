@@ -13,7 +13,7 @@ export class CultureComponent implements OnInit {
   culture;
   selectedCountryCode: string;
   countryList: Country[] = countryData;
-
+  
 
   constructor(
     private apiService: ApiService, 
