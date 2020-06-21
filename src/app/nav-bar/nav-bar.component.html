@@ -18,7 +18,7 @@ function googleTranslateElementInit() {
     
     <form (change) ="onSubmit(selectedCountryCode)">
       <div id="myDropdown" class="dropdown-content">
-        <select [(ngModel)]="selectedCountryCode" name="selectedCountryCode">
+        <select [(ngModel)]="selectedCountryCode"  name="selectedCountryCode">
         <option disabled>Select Country</option>
         <option *ngFor="let country of countryList" value="{{ country.code }}">{{ country.name }}</option>
         </select>
