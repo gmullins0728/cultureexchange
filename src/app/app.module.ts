@@ -11,15 +11,17 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { CountriesComponent } from './countries/countries.component';
 import { HolidaysComponent } from './holidays/holidays.component';
 import { CultureComponent } from './culture/culture.component';
+import { CommunityComponent } from '../app/community/community.component';
+import { ChatloginComponent } from './chat/chatlogin/chatlogin.component';
+import { ChatmainComponent } from './chat/chatmain/chatmain.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
-import { CommunityComponent } from '../app/community/community.component';
-import { ChatloginComponent } from './chat/chatlogin/chatlogin.component';
-import { ChatmainComponent } from './chat/chatmain/chatmain.component';
+
 
 @NgModule({
   declarations: [

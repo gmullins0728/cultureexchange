@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../services/api.service';
-import { ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'app-holidays',
@@ -12,7 +12,7 @@ export class HolidaysComponent implements OnInit {
   holidayCopy: any[];
   dayArray: string[];
   
-  constructor(private route: ActivatedRoute, private apiService: ApiService) {}
+  constructor(private apiService: ApiService) {}
 
   ngOnInit(): void {
     this.apiService.getHolidays().subscribe((data: any) => {
@@ -22,6 +22,7 @@ export class HolidaysComponent implements OnInit {
     });
   }
 
+  // Function to search by Country name
   myFunction(val): void {
     console.log('holidays', this.holidays);
     let results = this.holidays.filter((holiday) => val === holiday.country.name
@@ -33,8 +34,8 @@ export class HolidaysComponent implements OnInit {
     }
   }
 
+  // Function to list dates in ascending order
   getDays(val): any {
-    // console.log('days', new Date(this.holidays[0].date.iso).getTime());
     let results = this.holidays.sort((d1, d2) =>  {
     let dateA = new Date(d1?.date?.iso);
     let dateB = new Date(d2?.date?.iso);
