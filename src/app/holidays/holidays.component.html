@@ -1,13 +1,6 @@
-<input type="text" id="myInput" (keyup)="myFunction($event)" placeholder="Search for names.." />
+<input type="text" id="myInput" (keyup)="myFunction($event.target.value)" placeholder="Search for names.." />
 
 <input type="button" id="getDay" (click)="getDays($event.target.value)" value="Sort by date" />
-<!-- <input *ngFor="let day of holidays | sortBy: 'desc':'days'" />{{
-  day.date.datetime.day
-}}
-type="button" id="getDay" (click)="getDays($event.target.value)" value="Sort by
-date" /> -->
-
-<!-- <div ng-show="showDays"></div> -->
 
 <body>
   <table id="myTable">
