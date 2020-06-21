@@ -1,6 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { Country } from '../models/country';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router} from '@angular/router';
+import countryData from '../data/countries.json';
 
 
 @Component({
@@ -9,14 +9,18 @@ import { Country } from '../models/country';
   styleUrls: ['./countries.component.css']
 })
 export class CountriesComponent implements OnInit {
-  @Input() countryList: Country;
-  countryCode: string;
+  selectedCountryCode: string;
+  country = countryData;
+  public fragment: string;
+  
 
-  constructor(public route: ActivatedRoute,) {
-      this.route.queryParams.subscribe(params => {
-      this.countryCode = params["countryCode"];
-      }) 
-      console.log("This is the country code", this.countryCode);
+  constructor(
+    public route: ActivatedRoute,
+    public router: Router) {
+      this.route.fragment.subscribe ( name => {
+        const country= document.querySelector ( "#" + name )
+        if ( country ) country.scrollIntoView ( this.country.name )
+      });
     }
 
     getCountries(): void {
@@ -24,6 +28,8 @@ export class CountriesComponent implements OnInit {
     }
 
   ngOnInit(): void {
+    this.router.navigate( ['/culture', this.country.name ], {fragment: 'country.name'});
+  
   }
 
 }
