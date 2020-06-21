@@ -10,7 +10,7 @@ import { Country } from '../models/country';
   styleUrls: ['./countries.component.css']
 })
 export class CountriesComponent implements OnInit {
-  selectedCountryId: number;
+  countryName: string;
   country = countryData;
   countryList: Country[] = countryData;
   public fragment: string;
@@ -19,7 +19,7 @@ export class CountriesComponent implements OnInit {
   constructor(
     public route: ActivatedRoute,
     public router: Router) {
-      this.selectedCountryId = this.selectedCountryId;
+      this.countryName = this.countryName;
 
       // Navigate to Culture Component to their respectable section
       this.route.fragment.subscribe ( name => {

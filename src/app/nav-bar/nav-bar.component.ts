@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../services/api.service';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Country } from '../models/country';
 import countryData from '../data/countries.json';
 
@@ -14,23 +13,38 @@ export class NavBarComponent implements OnInit {
   holidays;
   culture;
   home;
-  selectedCountryId: number;
+  country = countryData;
+  countryName: string;
   countryList: Country[] = countryData;
+  public fragment: string;
 
 
-  constructor(
-    private apiService: ApiService, 
-    public route: Router) {}
+  constructor(public route: ActivatedRoute, public router: Router) {
+    // this.countryName = this.countryName;
+    // this.route.fragment.subscribe ( name => {
+    //   const country= document.querySelector ( "#" + name )
+    //   if ( country ) country.scrollIntoView ( this.country.name )
+    // });
+      
+    }
 
 
   ngOnInit(): void {
   
   }
   
-  onSubmit(selectedCountryId) {
-    this.selectedCountryId = selectedCountryId;
-    console.log(selectedCountryId);
-    this.route.navigate(['country'], { queryParams: {countryCode: selectedCountryId}});
-  }
+  onClick(countryName) {
+    this.countryName = countryName;
+    console.log(countryName);
+    this.router.navigate(['/country'], { queryParams: {countryName}});
+    // this.router.navigate(['/country'], { fragment: 'this.country.name'});
+    // this.route.fragment.subscribe ( countryName => {
+    //   const country= document.querySelector ( "#" + countryName )
+    //   if ( country ) country.scrollIntoView ( this.country.name )
+    // });
+    // this.router.navigate(['/country'], { fragment: '{{country.name}}'});
 
+  }
 }
+
+

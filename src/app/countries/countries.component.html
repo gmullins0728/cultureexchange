@@ -1,17 +1,22 @@
+<div class="countryList" *ngFor="let country of countryList" >
+  <a [routerLink]='"."' [fragment]="country.name">{{country.name}}</a>
+</div>
+
 <!-- FUNCTIONALITY: The end user is redirected to the correct spot on this page to access info on selected country -->
-<!-- <div class="description" *ngFor="let country of countryList" [attr.id]='country.id' >
-  <span class="one">{{country.id}}</span>
+<div class="description" *ngFor="let country of countryList" [attr.id]='country.name' >
+  <span class="one" name="countryName">{{country.name}}</span>
   <button class="learn">
-    <a [routerLink]="['/culture']" fragment="Australia">{{country.name}}: Learn History</a>
+    <a [routerLink]="['/culture']" fragment="{{ country.name }}">Learn {{ country.name }} History</a>
   </button>
   <button class="share">
-    <a routerLink="/holidays">{{country.name}}: Share Holidays</a>
+    <a routerLink="/holidays">Share {{ country.name }} Holidays</a>
   </button>
-</div> -->
+  <img src="{{ country.image }}" width="1000px"/>
+</div>
 
 
 
-<!-- AUSTRALIA -->
+<!-- AUSTRALIA
 <div class="grid-container">
   <div class="item1">
     <span class="one">Australia</span>
@@ -40,10 +45,10 @@
       width="1000px"
     />
   </div>
-  </div>
+  </div> -->
 
 <!-- BRAZIL -->
-<div class="grid-container">
+<!-- <div class="grid-container">
   <div class="item1">
       <span class="one">Brazil</span>
   </div>
@@ -67,10 +72,10 @@
   <div class="item5">
     <img src="../../assets/BrazilFlag.png" alt="BrazilFlag" width="1000px" />
   </div>
-</div>
+</div> -->
 
 <!-- CHINA -->
-<div class="grid-container">
+<!-- <div class="grid-container">
   <div class="item1">
     <span class="one">China</span>
   </div>
@@ -94,10 +99,10 @@
   <div class="item5">
     <img src="../../assets/ChinaFlag.png" alt="ChinaFlag" width="1000px" />
   </div>
-</div>
+</div> -->
 
 <!-- EGYPT -->
-<div class="grid-container">
+<!-- <div class="grid-container">
   <div class="item1">
     <span class="one">Egypt</span>
   </div>
@@ -121,10 +126,10 @@
   <div class="item5">
     <img src="../../assets/EgyptFlag.png" alt="EgyptFlag" width="1000px" />
   </div>
-</div>
+</div> -->
 
 <!-- FRANCE -->
-<div class="grid-container">
+<!-- <div class="grid-container">
   <div class="item1">
     <span class="one">France</span>
   </div>
@@ -148,10 +153,10 @@
   <div class="item5">
     <img src="../../assets/FranceFlag.png" alt="FranceFlag" width="1000px" />
   </div>
-</div>
+</div> -->
 
 <!--  GERMANY -->
-<div class="grid-container">
+<!-- <div class="grid-container">
   <div class="item1">
     <span class="one">Germany</span>
   </div>
@@ -175,10 +180,10 @@
   <div class="item5">
     <img src="../../assets/GermanyFlag.png" alt="GermanyFlag" width="1000px" />
   </div>
-</div>
+</div> -->
 
 <!-- INDIA -->
-<div class="grid-container">
+<!-- <div class="grid-container">
   <div class="item1">
     <span class="one">India</span>
   </div>
@@ -202,10 +207,10 @@
   <div class="item5">
     <img src="../../assets/IndiaFlag.png" alt="IndiaFlag" width="1000px" />
   </div>
-</div>
+</div> -->
 
 <!-- ITALY -->
-<div class="grid-container">
+<!-- <div class="grid-container">
   <div class="item1">
     <span class="one">Italy</span>
   </div>
@@ -229,10 +234,10 @@
   <div class="item5">
     <img src="../../assets/ItalyFlag.png" alt="USFlag" width="1000px" />
   </div>
-</div>
+</div> -->
 
 <!-- JAPAN -->
-<div class="grid-container">
+<!-- <div class="grid-container">
   <div class="item1">
     <span class="one">Japan</span>
   </div>
@@ -256,10 +261,10 @@
   <div class="item5">
     <img src="../../assets/JapanFlag.png" alt="JapanFlag" width="1000px" />
   </div>
-</div>
+</div> -->
 
 <!-- MEXICO -->
-<div class="grid-container">
+<!-- <div class="grid-container">
   <div class="item1">
     <span class="one">Mexico</span>
   </div>
@@ -283,10 +288,10 @@
   <div class="item5">
     <img src="../../assets/MexicoFlag.png" alt="USFlag" width="1000px" />
   </div>
-</div>
+</div> -->
 
 <!-- NIGERIA -->
-<div class="grid-container">
+<!-- <div class="grid-container">
   <div class="item1">
     <span class="one">Nigeria</span>
   </div>
@@ -310,10 +315,10 @@
   <div class="item5">
     <img src="../../assets/NigeriaFla.png" alt="NigeriaFlag" width="1000px" />
   </div>
-</div>
+</div> -->
 
 <!-- PHILIPPINES -->
-<div class="grid-container">
+<!-- <div class="grid-container">
   <div class="item1">
     <span class="one">Philippines</span>
   </div>
@@ -341,10 +346,10 @@
       width="1000px"
     />
   </div>
-</div>
+</div> -->
 
 <!-- Russia -->
-<div class="grid-container">
+<!-- <div class="grid-container">
   <div class="item1">
     <span class="one">Russia</span>
   </div>
@@ -368,10 +373,10 @@
   <div class="item5">
     <img src="../../assets/RussiaFlag.png" alt="RussiaFlag" width="1000px" />
   </div>
-</div>
+</div> -->
 
 <!-- South Korea -->
-<div class="grid-container">
+<!-- <div class="grid-container">
   <div class="item1">
     <span class="one">South Korea</span>
   </div>
@@ -399,10 +404,10 @@
       width="1000px"
     />
   </div>
-</div>
+</div> -->
 
 <!-- UNITED STATES -->
-<div class="grid-container">
+<!-- <div class="grid-container">
   <div class="item1">
     <span class="one">United States</span>
   </div>
@@ -430,4 +435,4 @@
       width="1000px"
     />
   </div>
-</div>
+</div> -->
