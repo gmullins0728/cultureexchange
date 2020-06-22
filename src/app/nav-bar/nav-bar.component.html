@@ -17,7 +17,7 @@ function googleTranslateElementInit() {
     <li><a href="community">Community</a></li>
     <li><a href="chatlogin">Chat</a></li>
     
-    <form (change) ="onClick(countryName)">
+    <form (change) ="onSubmit()">
       <div id="myDropdown" class="dropdown-content">
         <select [(ngModel)]="countryName" name="countryName" >
         <option [ngValue]="undefined" selected>Select Country</option>
