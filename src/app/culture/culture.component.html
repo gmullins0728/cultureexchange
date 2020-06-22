@@ -11,12 +11,12 @@
     </section>
 
     <!-- List of Countries -->
-    <div class="countryList" *ngFor="let country of countryList" >
-        <a [routerLink]='"."' [fragment]="country.name">{{country.name}}</a>
+    <div class="countryList" *ngFor="let country of countryList">
+        <a [routerLink]='' [fragment]="country.name">{{country.name}}</a>
     </div>
     
     <!-- Each Country with small summary -->
-    <div class="description" *ngFor="let country of countryList" [attr.id]='country.name' >
+    <div class="description" *ngFor="let country of countryList" [attr.name]='country.name' >
         <div class="h1">{{country.name}}</div>
         <div class="p">{{country.description}}</div>
         <a [routerLink]='culture' >Back to Top Page</a>
@@ -25,15 +25,7 @@
     <footer>
         <img src="../../assets/mainLogo.png" alt="logo" width="100px">
         <a href="culture">Jump to top</a>
-<<<<<<< HEAD
-          
-          <p>© 2020 DIVERSIFIED.CO</p>
-          
-      </footer>
-</main>
-=======
-        
+
         <p>© 2020 DIVERSIFIED.CO</p>
     </footer>
 </main>
->>>>>>> master
