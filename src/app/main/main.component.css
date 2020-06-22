@@ -28,12 +28,12 @@ p {
   word-spacing: 10px;
 }
 
-.guru {
-  padding-bottom: 30px;
-}
-
 /* Theme section of the page */
+.wrapper-2 {
+  position: relative;
+}
 .video-section {
+  position: absolute;
   position: relative;
   height: 450px;
   width: 100%;
@@ -44,6 +44,7 @@ p {
   width: 100vw;
   height: 100vh;
   filter: opacity(30%);
+  overflow: hidden;
 }
 
 .video-overlay {
@@ -53,15 +54,21 @@ p {
   bottom: 0;
   left: 0;
 }
-.video-overlay p {
+.overlay-content {
+  position: relative;
+  align-content: center;
+  top: 80%;
+}
+.overlay-content p {
   position: absolute;
-  bottom: 30%;
+  bottom: 25%;
   text-align: center;
   font-size: 20px;
+  font-weight: 800;
   color: #07020288;
   text-transform: uppercase;
 }
-.video-overlay button a {
+.overlay-content button a {
   position: absolute;
   top: 75%;
   left: 40%;
@@ -91,28 +98,28 @@ p {
   color: #17bebb;
 }
 
-.invite .social_media ul{
-  margin-left:40%;
+.invite .social_media ul {
+  margin-left: 40%;
   margin-top: 5%;
   display: flex;
+  list-style: none;
 }
 
-.invite .social_media ul li{
+.invite .social_media ul li {
   width: 45px;
   height: 45px;
-  background: linear-gradient(to right,#01a9ac,#01dbdf);
+  background: linear-gradient(to right, #01a9ac, #01dbdf);
   margin-right: 10px;
   border-radius: 5px;
   text-align: center;
   line-height: 45px;
 }
 
-.invite .social_media ul li a{
-  color :#fff;
+.invite .social_media ul li a {
+  color: #fff;
   display: block;
   font-size: 18px;
 }
-
 
 /* Footer section */
 
@@ -125,6 +132,7 @@ footer a {
   color: white;
   position: absolute;
   left: 45%;
+  list-style: none;
 }
 footer p {
   position: absolute;
@@ -132,4 +140,31 @@ footer p {
   font-size: 10px;
   bottom: 2%;
   left: 5%;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 375px) {
+  h1 {
+    font-size: 30px;
+  }
+  article p {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .wrapper-2 {
+    height: 200px;
+  }
+
+  #bgvid {
+    width: 100vw;
+    height: 375px;
+  }
+  .overlay-content {
+    height: 300px;
+    top: 40%;
+  }
+  .overlay-content p {
+    font-size: 15px;
+    margin-top: 80px;
+  }
 }
