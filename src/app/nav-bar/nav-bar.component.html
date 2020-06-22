@@ -10,17 +10,19 @@ function googleTranslateElementInit() {
 
 <div class="nav-section">
   <ul class="nav-links">
+
     <li><a href="home" class="logo"><img src="../../assets/mainLogo.png" alt="logo" height="75"/></a></li>
     <li><a href="home">Home</a></li>
+
     <li><a href="culture">Culture</a></li>
     <li><a href="holidays">Holidays</a></li>
     <li><a href="community">Community</a></li>
     
-    <form (change) ="onSubmit(selectedCountryCode)">
+    <form (change) ="onSubmit()">
       <div id="myDropdown" class="dropdown-content">
-        <select [(ngModel)]="selectedCountryCode"  name="selectedCountryCode">
-        <option disabled>Select Country</option>
-        <option *ngFor="let country of countryList" value="{{ country.code }}">{{ country.name }}</option>
+        <select [(ngModel)]="countryName" name="countryName" >
+        <option [ngValue]="undefined" selected>Select Country</option>
+        <option *ngFor="let country of countryList" value="{{ country.name }}">{{country.name}}</option>
         </select>
       </div>
     </form>  
@@ -36,11 +38,9 @@ function googleTranslateElementInit() {
     <div class="hamburger__nav">
       <div class="hamburger__nav--wrapper">
         <nav class="hamburger__nav--items">
-          <li><a href="country">Countries</a></li>
           <li><a href="culture">Cultures</a></li>
           <li><a href="holidays">Holidays</a></li>
-          <li><a href="#">Community</a></li>
-          <li><a href="#">Profile</a></li>
+          <li><a href="community">Community</a></li>
         </nav>
       </div>
     </div>
