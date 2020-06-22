@@ -1,84 +1,47 @@
-t/* Country name */
-.item1 {
-  grid-area: header;
-  grid-column-start: 1;
-  grid-column-end: 1;
+/* Country name */
+.h1 {
+  text-align: center;
 }
-
-/* Learn United States: History */
+/* Learn Country: History */
 .learn {
   background-color: rgba(118, 176, 65, 0.671);
+  text-align: center;
   height: 75px;
   width: 100%;
   font-size: 20px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-/* box holding Learn United States: History */
-.item2 {
-  grid-area: menu;
-  grid-column-start: 1;
-  grid-column-end: 1;
-}
-
-/* Learn United States: History */
+/* Learn Country: Holidays */
 .share {
   background-color: rgba(118, 176, 65, 0.671);
+  text-align: center;
   height: 75px;
   width: 100%;
   font-size: 20px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-.item3 {
-  grid-area: main;
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
 
 /* Learn United States: History */
-.build {
+/* .build {
   background-color: rgba(118, 176, 65, 0.671);
   height: 75px;
   width: 100%;
   font-size: 20px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-/* Build section - TBD */
-.item4 {
-  grid-area: right;
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 5;
-  grid-row-end: 6;
-}
+} */
 
 /* Flag photo */
-.item5 {
-  grid-area: footer;
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 7;
-  grid-row-end: 6;
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    "header header header header header header"
-    "menu main main main right right"
-    "footer footer footer footer footer footer";
-  grid-gap: 10px;
-  background-color: whitesmoke;
-  justify-content: center;
-  padding: 10px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-
-.grid-container > div {
-  /* background-color: rgba(118, 176, 65, 0.1); */
-  text-align: center;
-  padding: 20px 0;
-  font-size: 50px;
+.backtoTop {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
