@@ -15,14 +15,13 @@ const routerOptions: ExtraOptions = {
 };
 
 const routes: Routes = [
-  { path: '', component: MainComponent },
+  { path: 'home', component: MainComponent },
   { path: 'culture', component: CultureComponent },
   { path: 'holidays', component: HolidaysComponent },
   { path: 'country', component: CountriesComponent },
   { path: 'community', component: CommunityComponent },
   { path: 'chatlogin', component: ChatloginComponent },
   { path: 'chatmain', component: ChatmainComponent },
-  { path: '', redirectTo: 'culture', pathMatch: 'full' },
 ];
 
 @NgModule({
