@@ -25,19 +25,16 @@
       /></a>
     </li>
     <li><a href="home">Home</a></li>
+
     <li><a href="culture">Culture</a></li>
     <li><a href="holidays">Holidays</a></li>
     <li><a href="community">Community</a></li>
-
-    <form (change)="onSubmit(selectedCountryCode)">
+    
+    <form (change) ="onSubmit()">
       <div id="myDropdown" class="dropdown-content">
-        <select [(ngModel)]="selectedCountryCode" name="selectedCountryCode">
-          <option disabled>Select Country</option>
-          <option
-            *ngFor="let country of countryList"
-            value="{{ country.code }}"
-            >{{ country.name }}</option
-          >
+        <select [(ngModel)]="countryName" name="countryName" >
+        <option [ngValue]="undefined" selected>Select Country</option>
+        <option *ngFor="let country of countryList" value="{{ country.name }}">{{country.name}}</option>
         </select>
       </div>
     </form>
