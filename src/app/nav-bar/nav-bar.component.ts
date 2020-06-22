@@ -25,7 +25,14 @@ export class NavBarComponent implements OnInit {
   }
   
   onSubmit() {
-    this.router.navigate(['/country'], { fragment: this.countryName});
+    this.router.navigate(['/country'], { fragment: this.countryName}).then((e) => {
+      if (e) {
+        console.log("navigation is successful");
+      } else {
+        console.log("navigation failed")
+      }
+    });
+    
 
   }
 }

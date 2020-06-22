@@ -7,5 +7,6 @@
   <button class="share">
     <a routerLink="/holidays">Share {{ country.name }} Holidays</a>
   </button>
-  <img src="{{ country.image }}" width="1000px"/>
+  <img src="{{ country.image }}" width="1000px"/><br>
+  <a [routerLink]="country">Back to Top Page</a>
 </div>
