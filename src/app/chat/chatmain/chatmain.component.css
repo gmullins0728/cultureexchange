@@ -78,9 +78,11 @@ a {
 
 /* Chat Container */
 .chat-container {
+  
   max-width: 600px;
   background: rgb(70, 67, 67);
   margin: 30px auto;
+  margin-top: 200px;
   overflow: hidden;
   border-radius: 8px;;
 }
@@ -164,6 +166,32 @@ a {
   height: 40px;
   flex: 1;
 }
+
+/* Footer section */
+
+footer {
+  background-color: #2e282a;
+  height: 100px;
+  width:100%;
+  position: absolute;
+  margin-top: 30%;
+}
+
+footer a{
+    color: white;
+    position: absolute;
+    left: 45%;
+}
+
+footer p {
+  position: absolute;
+  color: white;
+  font-size: 10px;
+  bottom: 2%;
+  margin-left: 45%;
+}
+
+
 
 @media (max-width: 700px) {
 	.chat-main {
