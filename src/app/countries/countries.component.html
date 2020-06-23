@@ -1,5 +1,5 @@
 <!-- FUNCTIONALITY: The end user is redirected to the correct spot on this page to access info on selected country -->
-<div class="description" *ngFor="let country of countryList" [attr.name]='country.name'>
+<div class="description" *ngFor="let country of countryList" [attr.id]='country.name'>
   <div class="h1"><h1>{{country.name}}</h1></div>
   <button class="learn">
     <a [routerLink]="['/culture']" fragment="{{ country.name }}">Learn {{ country.name }} History</a>

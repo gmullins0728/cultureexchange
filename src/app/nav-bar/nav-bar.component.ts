@@ -10,8 +10,10 @@ import countryData from '../data/countries.json';
   styleUrls: ['./nav-bar.component.css'],
 })
 export class NavBarComponent implements OnInit {
+  countryId: number;
   countryName: string;
   countryList: Country[] = countryData;
+  public fragment: string;
 
 
 
@@ -25,8 +27,8 @@ export class NavBarComponent implements OnInit {
   }
   
   onSubmit() {
-    this.router.navigate(['/country'], { fragment: this.countryName}).then((e) => {
-      if (e) {
+    this.router.navigate(['/country'], { fragment: this.countryName}).then((err) => {
+      if (err) {
         console.log("navigation is successful");
       } else {
         console.log("navigation failed")

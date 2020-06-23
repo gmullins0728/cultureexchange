@@ -15,6 +15,7 @@ const routerOptions: ExtraOptions = {
 };
 
 const routes: Routes = [
+  { path: '', component: MainComponent },
   { path: 'home', component: MainComponent },
   { path: 'culture', component: CultureComponent },
   { path: 'holidays', component: HolidaysComponent },
