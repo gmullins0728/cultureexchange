@@ -25,46 +25,6 @@
   background-color: #17bebb;
   color: rgba(255, 255, 255, 0.671);
 }
-/* .grid-container {
-  width: 100vw;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 10px;
-  background-color: #2e282a;
-  padding: 10px;
-}
-.grid-container > div {
-  background-color: rgba(23, 190, 187, 0.5);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-}
-.item1 {
-  grid-area: 2 / 1 / span 2 / span 3;
-  width: 50vw;
-}
-.item2 {
-  grid-area: 2 / 4 / span 2 / span 3;
-  overflow: scroll;
-  width: 50vw;
-} */
-/* ********************************** */
-
-/* #myInput { */
-/* background-image: url("/css/searchicon.png"); Add a search icon to input */
-/* background-position: 10px 12px; Position the search icon */
-/* background-repeat: no-repeat; Do not repeat the icon image */
-/* width: 100%; */
-/* Full-width  */
-/* font-size: 16px; */
-/* Increase font-size  */
-/* padding: 12px 20px 12px 40px; */
-/* Add some padding  */
-/* border: 1px solid #ddd; */
-/* Add a grey border  */
-/* margin-bottom: 12px; */
-/* Add some space below the input */
-/* } */
 
 #myTable {
   border-collapse: collapse;

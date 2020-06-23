@@ -34,7 +34,7 @@
       <div id="myDropdown" class="dropdown-content">
         <select [(ngModel)]="countryName" name="countryName" >
         <option [ngValue]="undefined" selected>Select Country</option>
-        <option *ngFor="let country of countryList" value="{{ country.name }}">{{country.name}}</option>
+        <option *ngFor="let country of countryList" value="{{ country.name }}" [routerLink]="'/country'" fragment="country.name">{{country.name}}</option>
         </select>
       </div>
     </form>
@@ -53,8 +53,10 @@
     <div class="hamburger__nav">
       <div class="hamburger__nav--wrapper">
         <nav class="hamburger__nav--items">
+
           <li><a href="home">Home</a></li>
           <li><a href="country">Countries</a></li>
+
           <li><a href="culture">Cultures</a></li>
           <li><a href="holidays">Holidays</a></li>
           <li><a href="community">Community</a></li>
