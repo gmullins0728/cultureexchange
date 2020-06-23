@@ -11,10 +11,11 @@ import { ChatloginComponent } from './chat/chatlogin/chatlogin.component';
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
   anchorScrolling: 'enabled',
-  // scrollOffset: [0, 64],
+  scrollOffset: [0, 64],
 };
 
 const routes: Routes = [
+  { path: '', component: MainComponent },
   { path: 'home', component: MainComponent },
   { path: 'culture', component: CultureComponent },
   { path: 'holidays', component: HolidaysComponent },
