@@ -13,6 +13,7 @@ export class CultureComponent implements OnInit {
   countryName: string;
   countryList: Country[] = countryData;
   
+  
 
   constructor(public route: ActivatedRoute) {
   
