@@ -44,7 +44,7 @@ h1 {
 /* Info card 1 */
 .wrapper {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 450px;
@@ -145,7 +145,7 @@ h1 {
 /* info card 2 */
 .wrapper-2 {
   position: absolute;
-  top: 90%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 450px;
@@ -247,7 +247,7 @@ h1 {
 
 .wrapper-3 {
   position: absolute;
-  top: 140%;
+  top: 130%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 450px;

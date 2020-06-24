@@ -10,6 +10,7 @@
   width: 100%;
   font-size: 20px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  
 }
 
 /* Learn Country: Holidays */
@@ -21,15 +22,6 @@
   font-size: 20px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-
-/* Learn United States: History */
-/* .build {
-  background-color: rgba(118, 176, 65, 0.671);
-  height: 75px;
-  width: 100%;
-  font-size: 20px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-} */
 
 /* Flag photo */
 .image {
@@ -44,4 +36,5 @@
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  text-decoration: none;
 }
