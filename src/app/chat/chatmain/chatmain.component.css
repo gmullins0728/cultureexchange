@@ -7,9 +7,8 @@
 }
 
 main {
-  height: 100vh;
-	background: rgb(9,121,120);
-  background: linear-gradient(90deg, rgba(9,121,120,1) 10%, rgba(23,190,187,1) 47%, rgba(0,212,255,1) 83%);
+  height: 100%;
+	background: linear-gradient(to right, #01a9ac, #01dbdf);
 }
 
 .h1 {
@@ -19,14 +18,13 @@ main {
 
 .chat-container {
   padding-top: 100px;
-  --dark-color-a: #2E282A;
-	--dark-color-b: #3b3738;
+  --dark-color-a: #444343;
+	--dark-color-b: #b8b4b4;
 	--light-color: #5f5d5d;
 	--success-color: #5cb85c;
   --error-color: #d9534f;
 	font-family: 'Alegreya Sans', sans-serif;
   font-size: 16px;
-  overflow: hidden;
 }
 
 ul {
@@ -50,16 +48,26 @@ a {
   margin: 5px;
 }
 
-.btn {
+.btn1 {
   cursor: pointer;
   padding: 5px 15px;
-  background: var(--light-color);
-  color: rgb(34, 31, 31);
+  background: rgb(23, 190, 187);
   border: 0;
   font-size: 17px;
   border-style: solid;
   border-radius: 8px;
   margin: 5px;
+}
+
+.btn2 {
+  cursor: pointer;
+  padding: 5px 15px;
+  background: rgb(23, 190, 187);
+  border: 0;
+  font-size: 17px;
+  border-style: solid;
+  border-radius: 8px;
+  margin: 5px 20px;
 }
 
 /* Header */
@@ -79,16 +87,16 @@ a {
 /* Chat Container */
 .chat-container {
   max-width: 600px;
-  background: rgb(70, 67, 67);
+  background: rgb(200, 199, 199);
   margin: 30px auto;
   margin-top: 200px;
-  overflow: hidden;
-  border-radius: 8px;;
+  overflow: auto;
+  border-radius: 8px;
 }
 
 .chat-main {
   display: grid;
-  overflow: hidden;
+  overflow: auto;
 }
 
 
@@ -108,14 +116,15 @@ a {
 .chat-messages .message .meta {
   font-size: 18px;
   font-weight: bold;
-  color: var(--dark-color-b);
+  color: rgb(228, 226, 226);
+  /* color: var(--dark-color-b); */
   opacity: 0.7;
   margin-bottom: 7px;
 }
 
 .chat-messages .message .meta span {
   font-size: 14px;
-  color: rgb(126, 125, 125);
+  color: rgb(228, 226, 226);
 }
 
 .chat-message {
@@ -130,12 +139,12 @@ a {
 
 .visitor {
   text-align: left;
-  background: linear-gradient(90deg, rgba(168,171,177,1) 0%, rgba(111,117,122,1) 80%, rgba(58,67,71,1) 100%);
+  background: rgb(23, 190, 187);
   color: white;
 }
 
 .guide {
-  background: linear-gradient(280deg, rgba(168,171,177,1) 0%, rgba(111,117,122,1) 80%, rgba(58,67,71,1) 100%);
+  background: rgb(4, 160, 157);
   text-align: right;
   color: white;
   

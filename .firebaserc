@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "the-culture-exchange": {
+      "hosting": {
+        "cultureexchange": [
+          "the-culture-exchange"
+        ]
+      }
+    }
+  }
+}
