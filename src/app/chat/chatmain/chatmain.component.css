@@ -7,9 +7,8 @@
 }
 
 main {
-  height: 100vh;
-	background: rgb(9,121,120);
-  background: linear-gradient(90deg, rgba(9,121,120,1) 4%, rgba(23,190,187,1) 54%, rgb(4, 172, 206) 100%);
+  height: 100%;
+	background: linear-gradient(to right, #01a9ac, #01dbdf);
 }
 
 .h1 {
@@ -19,14 +18,13 @@ main {
 
 .chat-container {
   padding-top: 100px;
-  --dark-color-a: #423f40;
-	--dark-color-b: #3b3738;
+  --dark-color-a: #444343;
+	--dark-color-b: #b8b4b4;
 	--light-color: #5f5d5d;
 	--success-color: #5cb85c;
   --error-color: #d9534f;
 	font-family: 'Alegreya Sans', sans-serif;
   font-size: 16px;
-  overflow: hidden;
 }
 
 ul {
@@ -53,14 +51,7 @@ a {
 .btn1 {
   cursor: pointer;
   padding: 5px 15px;
-  /* background: var(--light-color); */
   background: rgb(23, 190, 187);
-  /* background: linear-gradient(
-    149deg,
-    rgba(23, 190, 187, 1) 25%,
-    rgba(127, 139, 138, 1) 60%
-  ); */
-  /* color: rgb(34, 31, 31); */
   border: 0;
   font-size: 17px;
   border-style: solid;
@@ -71,14 +62,7 @@ a {
 .btn2 {
   cursor: pointer;
   padding: 5px 15px;
-  /* background: var(--light-color); */
   background: rgb(23, 190, 187);
-  /* background: linear-gradient(
-    149deg,
-    rgba(23, 190, 187, 1) 25%,
-    rgba(127, 139, 138, 1) 60%
-  ); */
-  /* color: rgb(34, 31, 31); */
   border: 0;
   font-size: 17px;
   border-style: solid;
@@ -103,17 +87,16 @@ a {
 /* Chat Container */
 .chat-container {
   max-width: 600px;
-  background: rgb(153, 148, 148);
+  background: rgb(200, 199, 199);
   margin: 30px auto;
   margin-top: 200px;
-  overflow-y: scroll;
-  overflow: hidden;
+  overflow: auto;
   border-radius: 8px;
 }
 
 .chat-main {
   display: grid;
-  overflow: hidden;
+  overflow: auto;
 }
 
 
@@ -133,14 +116,15 @@ a {
 .chat-messages .message .meta {
   font-size: 18px;
   font-weight: bold;
-  color: var(--dark-color-b);
+  color: rgb(228, 226, 226);
+  /* color: var(--dark-color-b); */
   opacity: 0.7;
   margin-bottom: 7px;
 }
 
 .chat-messages .message .meta span {
   font-size: 14px;
-  color: rgb(207, 204, 204);
+  color: rgb(228, 226, 226);
 }
 
 .chat-message {
@@ -160,7 +144,7 @@ a {
 }
 
 .guide {
-  background: rgb(24, 82, 81);
+  background: rgb(4, 160, 157);
   text-align: right;
   color: white;
   

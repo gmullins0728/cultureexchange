@@ -9,7 +9,8 @@
 main {
 	height: 100vh;
   background: rgb(9,121,120);
-  background: linear-gradient(90deg, rgba(9,121,120,1) 4%, rgba(23,190,187,1) 54%, rgb(4, 172, 206) 100%);
+  /* background: linear-gradient(90deg, rgba(9,121,120,1) 4%, rgba(23,190,187,1) 54%, rgb(4, 172, 206) 100%); */
+  background: linear-gradient(to right, #01a9ac, #01dbdf);
 }
 
 .h1 {
@@ -19,8 +20,8 @@ main {
 
 .join-container {
   padding-top: 100px;
-  --dark-color-a: #353132;
-	--dark-color-b: #6d6868;
+  --dark-color-a: #444343;
+	--dark-color-b: #b8b4b4;
 	--light-color: #a19e9e;
 	--success-color: #5cb85c;
   --error-color: #d9534f;
