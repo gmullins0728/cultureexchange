@@ -66,9 +66,9 @@ a {
 .btn {
   cursor: pointer;
   padding: 5px 15px;
-  background: rgb(23, 190, 187);
-  /* background: var(--light-color);
-  color: var(--dark-color-a); */
+  /* background: rgb(23, 190, 187); */
+  background: #444343;
+  color: rgb(60, 196, 193);
   border: 0;
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 17px;
