@@ -140,7 +140,7 @@ footer a {
   color: white;
   position: absolute;
   left: 45%;
-  list-style: none;
+  text-decoration: none;
 }
 footer p {
   position: absolute;
@@ -151,15 +151,12 @@ footer p {
 }
 
 @media screen and (max-width: 688px) {
-  .wrapper {
-    height: 70vh;
-  }
   h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
   article p {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 18px;
   }
   .guru img {
     display: none;
@@ -170,15 +167,21 @@ footer p {
   }
 
   .invite h2 {
-    font-size: 40px;
+    font-size: 30px;
     margin-left: 20%;
   }
   .invite .social_media ul {
-    margin-left: 30%;
+    margin-left: 22%;
+  }
+  footer a {
+    display: none;
   }
 }
 
 @media screen and (max-width: 992px) {
+  .wrapper {
+    height: 60vh;
+  }
   .guru img {
     right: 23%;
   }

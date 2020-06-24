@@ -35,11 +35,11 @@ header {
   color: white;
   text-align: center;
 }
-.explore{
- background-color: white;
- margin-bottom: 20px;
+.explore {
+  background-color: white;
+  margin-bottom: 20px;
 }
-.wrapper{
+.wrapper {
   position: relative;
   height: 250px;
   margin-bottom: 20px;
@@ -47,7 +47,6 @@ header {
   display: flex;
   flex-flow: column wrap;
   background-color: white;
-  
 }
 .countryList {
   margin-top: 20px;
@@ -66,8 +65,8 @@ header {
 }
 
 .countryList a:hover {
-  color:#17bebb;
-  background-color:#ffc914;
+  color: #17bebb;
+  background-color: #ffc914;
   text-decoration: none;
 }
 
@@ -100,4 +99,35 @@ footer p {
   font-size: 10px;
   bottom: 2%;
   left: 5%;
+}
+
+@media screen and (max-width: 688px) {
+  header {
+    height: 30vh;
+  }
+  .title {
+    margin-top: 15%;
+    font-size: 35px;
+  }
+
+  .intro {
+    height: 100vh;
+  }
+
+  .intro .span {
+    font-size: 17px;
+  }
+  .countryList {
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    height: 50vh;
+  }
+  .intro {
+    height: 35vh;
+  }
 }

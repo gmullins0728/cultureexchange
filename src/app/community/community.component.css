@@ -1,6 +1,7 @@
 .header {
   position: relative;
-  height: 200px;
+  height: 30vh;
+  width: 100vw;
   background-color: rgb(255, 255, 255);
   text-align: center;
 }
@@ -9,8 +10,8 @@ h1 {
 }
 .about-us {
   font-size: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .share {
   background: rgb(23, 190, 187);
@@ -30,7 +31,8 @@ h1 {
 }
 .info-cards {
   position: relative;
-  height: 100vh;
+  height: 90vh;
+  bottom: 60px;
   background-size: cover;
   background-color: #e0e0e0;
 }
@@ -373,11 +375,26 @@ h1 {
 }
 
 @media screen and (max-width: 688px) {
+  .header {
+    height: 70vh;
+  }
   .about-us {
-    font-size: 15px;
+    font-size: 16px;
   }
 
-  .share a {
-    font-size: 15px;
+  .wrapper {
+    width: 400px;
+  }
+  .wrapper-2 {
+    width: 400px;
+  }
+  .wrapper-3 {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    height: 40vh;
   }
 }
